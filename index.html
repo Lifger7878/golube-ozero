@@ -1,0 +1,219 @@
+<!-- ================= HTML (index.html) ================= -->
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Готель Paradise</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#rooms">Номери</a></li>
+            <li><a href="#houses">Будинки</a></li>
+            <li><a href="#gazebo">Альтанки</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="overlay">
+            <h1>База відпочинку Голубе Озеро</h1>
+            <p>Комфорт і стильний відпочинок</p>
+        </div>
+    </header>
+
+    <section id="about" class="section reveal">
+        <h2 class="about-us">Про нас</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>💙 Відпочинок, який ви запам’ятаєте надовго!
+
+                    Запрошуємо вас на базу відпочинку «Голубе озеро» — справжній куточок природи серед соснового лісу
+                    біля кришталево чистої води 🌲🌊
+
+                    ✨ Тут на вас чекає:
+                    • чистий піщаний пляж і прозоре блакитне озеро
+                    • затишні будиночки та комфортні номери
+                    • альтанки з мангалами для компаній
+                    • кафе та смачна кухня
+                    • активний відпочинок: катамарани, риболовля, спорт
+                    • дитячі та сімейні розваги
+
+                    💫 Ідеальне місце для:
+                    ✔ сімейного відпочинку
+                    ✔ романтичних вихідних
+                    ✔ святкувань та корпоративів
+
+                    Відчуйте справжній релакс далеко від міської метушні — свіже повітря, тиша і неймовірні краєвиди
+                    гарантовані 🌅
+
+                    📍 Лише кілька годин від Києва — і ви в іншому світі
+
+                    📲 Бронюйте свій відпочинок вже сьогодні!
+                    .</p>
+            </div>
+            <div class="about-video">
+                <iframe src="https://www.youtube.com/watch?v=t1rFtR3tCX0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section id="rooms" class="section reveal">
+        <h2>Номери (4)</h2>
+        <div class="grid">
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+                <div class="card-content">
+                    <h3>Номер 1</h3>
+                    <p class="price">800 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+                <div class="card-content">
+                    <h3>Номер 2</h3>
+                    <p class="price">800 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+                <div class="card-content">
+                    <h3>Номер 3</h3>
+                    <p class="price">1200 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c">
+                <div class="card-content">
+                    <h3>Номер 4</h3>
+                    <p class="price">1200 грн</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOUSES -->
+    <section id="houses" class="section reveal">
+        <h2>Будинки (8)</h2>
+        <div class="grid">
+            <!-- 8 cards -->
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353">
+                <div class="card-content">
+                    <h3>Будинок 1</h3>
+                    <p class="price">1800 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+                <div class="card-content">
+                    <h3>Будинок 2</h3>
+                    <p class="price">1800 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750">
+                <div class="card-content">
+                    <h3>Будинок 3</h3>
+                    <p class="price">2800 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img src="завантаження.jfif">
+                <div class="card-content">
+                    <h3>Будинок 4</h3>
+                    <p class="price">4500 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1472220625704-91e1462799b2">
+                <div class="card-content">
+                    <h3>Будинок 5</h3>
+                    <p class="price">1400 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9">
+                <div class="card-content">
+                    <h3>Будинок 6</h3>
+                    <p class="price">1400 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
+                <div class="card-content">
+                    <h3>Будинок 3a</h3>
+                    <p class="price">400 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1464146072230-91cabc968266">
+                <div class="card-content">
+                    <h3>Будинок 3б</h3>
+                    <p class="price">400 грн</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GAZEBO -->
+    <section id="gazebo" class="section reveal">
+        <h2>Альтанки</h2>
+        <div class="grid">
+            <div class="card" onclick="openModal(this)"><img src="альтанка.webp">
+                <div class="card-content">
+                    <h3>Альтанка</h3>
+                    <p class="price">600-800 грн</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="section reveal">
+        <h2 class="contacts">Контакти</h2>
+        <p class="contacts">+380 67 365 1044</p>
+    </section>
+
+    <footer>
+        <p>© 2026 База відпочинку «Голубе озеро»</p>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <img id="modal-img">
+    </div>
+
+    <script>
+        // scroll animation
+        const reveals = document.querySelectorAll('.reveal');
+        window.addEventListener('scroll', () => {
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) {
+                    el.classList.add('active');
+                }
+            });
+        });
+
+        // modal gallery
+        function openModal(card) {
+            const img = card.querySelector('img').src;
+            document.getElementById('modal-img').src = img;
+            document.getElementById('modal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
