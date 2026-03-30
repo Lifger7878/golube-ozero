@@ -2,18 +2,26 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 
-  background-image: url("голбе озеро.jpg");
+  background-image: url("голубе озеро.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  image-rendering: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-/* На iPhone уникнути розмиття фону: \n   - видаляємо подвійне накладання pseudo-element\n   - фонове зображення задаємо тільки на body */
+  background-image: url("голубе озеро.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+}
 
 nav {
   position: fixed;
@@ -163,7 +171,14 @@ footer {
   padding: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  body {
+    background-image: url("голубе\ озеро-mobile.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
