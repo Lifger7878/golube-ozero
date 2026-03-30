@@ -1,35 +1,55 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: url("голубе озеро.jpg") center/cover fixed;
+  color: #333;
+
+  background: url("голубе озеро.jpg") center/cover no-repeat fixed;
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
 }
 
 nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 12px 20px;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 15px;
-  list-style: none;
+  align-items: center;
+  gap: 25px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
 }
 
 header {
+  padding-top: 80px;
   height: 100vh;
   background: url("https://images.unsplash.com/photo-1501117716987-c8e1ecb210a0")
     center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: scroll;
 }
 .card-content {
   color: white;
@@ -134,4 +154,18 @@ footer {
   text-align: center;
   color: white;
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  nav a {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
 }
