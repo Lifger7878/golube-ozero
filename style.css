@@ -1,10 +1,19 @@
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  color: #333;
+  font-family: Arial, sans-serif;
 
-  background: url("голубе озеро.jpg") center/cover no-repeat fixed;
+  background-image: url("голбе озеро.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  image-rendering: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
+
+/* На iPhone уникнути розмиття фону: \n   - видаляємо подвійне накладання pseudo-element\n   - фонове зображення задаємо тільки на body */
 
 nav {
   position: fixed;
@@ -44,8 +53,6 @@ nav a:hover {
 header {
   padding-top: 80px;
   height: 100vh;
-  background: url("https://images.unsplash.com/photo-1501117716987-c8e1ecb210a0")
-    center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
