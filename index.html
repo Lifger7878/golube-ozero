@@ -1,181 +1,249 @@
+<!-- ================= HTML (index.html) ================= -->
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="База відпочинку Голубе Озеро - комфортний відпочинок серед природи">
-    <title>Голубе Озеро | База Відпочинку</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Готель Paradise</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- НАВІГАЦІЯ -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">🏞️ Голубе Озеро</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Меню">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#about" class="nav-link">Про нас</a></li>
-                <li><a href="#rooms" class="nav-link">Номери</a></li>
-                <li><a href="#houses" class="nav-link">Будинки</a></li>
-                <li><a href="#gazebo" class="nav-link">Альтанки</a></li>
-                <li><a href="#contacts" class="nav-link">Контакти</a></li>
-            </ul>
-        </div>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#rooms">Номери</a></li>
+            <li><a href="#houses">Будинки</a></li>
+            <li><a href="#gazebo">Альтанки</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
     </nav>
 
-    <!-- ГЕРОЙ -->
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Голубе Озеро</h1>
-            <p>Ваш ідеальний відпочинок серед природи 🌲🌊</p>
-            <a href="#about" class="cta-button">Дізнатися більше</a>
+    <header>
+        <div class="overlay">
+            Голубе Озеро
+            <span>Ваш ідеальний відпочинок серед природи 🌲🌊</span>
         </div>
+
     </header>
 
-    <!-- ПРО НАС -->
     <section id="about" class="section reveal">
-        <div class="container">
-            <h2 class="section-title">Про нас</h2>
-            <div class="about-wrapper">
-                <div class="about-content">
-                    <p class="intro">💙 <strong>Відпочинок, який ви запам'ятаєте надовго!</strong></p>
-                    <p>Запрошуємо вас на базу відпочинку <span class="highlight">«Голубе озеро»</span> — справжній куточок природи</p>
+        <h2 class="NameUnit">Про нас</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p class="intro">💙 <strong>Відпочинок, який ви запам’ятаєте надовго!</strong></p>
 
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <h3>✨ Тут на вас чекає:</h3>
-                            <ul class="feature-list">
-                                <li>Чистий піщаний пляж</li>
-                                <li>Затишні будиночки та номери</li>
-                                <li>Альтанки з мангалами</li>
-                                <li>Кафе та кухня</li>
-                                <li>Активний відпочинок</li>
-                            </ul>
-                        </div>
-                        <div class="feature-card">
-                            <h3>💫 Ідеальне для:</h3>
-                            <ul class="feature-list">
-                                <li>Сімей</li>
-                                <li>Пар</li>
-                                <li>Компаній</li>
-                            </ul>
-                        </div>
+                <p>Запрошуємо вас на базу відпочинку <span>«Голубе озеро»</span> — справжній куточок природи серед
+                    соснового лісу біля кришталево чистої води 🌲🌊</p>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>✨ Тут на вас чекає:</h3>
+                        <ul>
+                            <li>чистий піщаний пляж і прозоре блакитне озеро</li>
+                            <li>затишні будиночки та комфортні номери</li>
+                            <li>альтанки з мангалами для компаній</li>
+                            <li>кафе та смачна кухня</li>
+                            <li>активний відпочинок: катамарани, риболовля, спорт</li>
+                            <li>дитячі та сімейні розваги</li>
+                        </ul>
                     </div>
 
-                    <div class="quote-box">
-                        <p>Свіже повітря, тиша і неймовірні краєвиди 🌅</p>
+                    <div class="feature-item">
+                        <h3>💫 Ідеальне місце для:</h3>
+                        <ul class="check-list">
+                            <li>сімейного відпочинку</li>
+                            <li>романтичних вихідних</li>
+                            <li>святкувань та корпоративів</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="about-media">
-                    <iframe class="video-player" src="https://www.youtube.com/embed/t1rFtR3tCX0" allowfullscreen loading="lazy"></iframe>
+
+                <p class="quote">Відчуйте справжній релакс далеко від міської метушні — свіже повітря, тиша і неймовірні
+                    краєвиди гарантовані 🌅</p>
+
+                <div class="cta-box">
+                    <p>📍 Лише кілька годин від Києва — і ви в іншому світі</p>
+                    <p class="call-to-action">📲 Бронюйте свій відпочинок вже сьогодні!</p>
                 </div>
+            </div>
+            <div class="about-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/t1rFtR3tCX0?si=902jXEv92MKZuI5H"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <!-- НОМЕРИ -->
+    <!-- ROOMS -->
     <section id="rooms" class="section reveal">
-        <div class="container">
-            <h2 class="section-title">Номери готелю</h2>
-            <div class="grid-gallery">
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945" alt="Номер 1">
-                    <div class="card-content">
-                        <h3>Номер 1</h3>
-                        <p class="price">800 грн/ніч</p>
-                        <button class="btn-view">Переглянути</button>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b" alt="Номер 2">
-                    <div class="card-content">
-                        <h3>Номер 2</h3>
-                        <p class="price">800 грн/ніч</p>
-                        <button class="btn-view">Переглянути</button>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427" alt="Номер 3">
-                    <div class="card-content">
-                        <h3>Номер 3 (Люкс)</h3>
-                        <p class="price">1200 грн/ніч</p>
-                        <button class="btn-view">Переглянути</button>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c" alt="Номер 4">
-                    <div class="card-content">
-                        <h3>Номер 4 (Люкс)</h3>
-                        <p class="price">1200 грн/ніч</p>
-                        <button class="btn-view">Переглянути</button>
-                    </div>
-                </article>
+        <h2 class="NameUnit">Номери готелю</h2>
+        <div class="grid">
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+                <div class="card-content">
+                    <h3>Номер 1</h3>
+                    <p class="price">800 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
+                <div class="card-content">
+                    <h3>Номер 2</h3>
+                    <p class="price">800 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+                <div class="card-content">
+                    <h3>Номер 3</h3>
+                    <p class="price">1200 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c">
+                <div class="card-content">
+                    <h3>Номер 4</h3>
+                    <p class="price">1200 грн</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- БУДИНКИ -->
+    <!-- HOUSES -->
     <section id="houses" class="section reveal">
-        <div class="container">
-            <h2 class="section-title">Будинки</h2>
-            <div class="grid-gallery">
-                <article class="card"><img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353" alt="Будинок 1"><div class="card-content"><h3>Будинок 1</h3><p class="price">1800 грн</p><button class="btn-view">Переглянути</button></div></article>
-                <article class="card"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="Будинок 2"><div class="card-content"><h3>Будинок 2</h3><p class="price">1800 грн</p><button class="btn-view">Переглянути</button></div></article>
-                <article class="card"><img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" alt="Будинок 3"><div class="card-content"><h3>Будинок 3</h3><p class="price">2800 грн</p><button class="btn-view">Переглянути</button></div></article>
-                <article class="card"><img src="завантаження.jfif" alt="Будинок 4"><div class="card-content"><h3>Будинок 4</h3><p class="price">4500 грн</p><button class="btn-view">Переглянути</button></div></article>
-                <article class="card"><img src="https://images.unsplash.com/photo-1472220625704-91e1462799b2" alt="Будинок 5"><div class="card-content"><h3>Будинок 5</h3><p class="price">1400 грн</p><button class="btn-view">Переглянути</button></div></article>
-                <article class="card"><img src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9" alt="Будинок 6"><div class="card-content"><h3>Будинок 6</h3><p class="price">1400 грн</p><button class="btn-view">Переглянути</button></div></article>
-                <article class="card"><img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae" alt="Будинок 3a"><div class="card-content"><h3>Будинок 3a</h3><p class="price">400 грн</p><button class="btn-view">Переглянути</button></div></article>
-                <article class="card"><img src="https://images.unsplash.com/photo-1464146072230-91cabc968266" alt="Будинок 3б"><div class="card-content"><h3>Будинок 3б</h3><p class="price">400 грн</p><button class="btn-view">Переглянути</button></div></article>
+        <h2 class="NameUnit">Будинки (8)</h2>
+        <div class="grid">
+            <!-- 8 cards -->
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353">
+                <div class="card-content">
+                    <h3>Будинок 1</h3>
+                    <p class="price">1800 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+                <div class="card-content">
+                    <h3>Будинок 2</h3>
+                    <p class="price">1800 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750">
+                <div class="card-content">
+                    <h3>Будинок 3</h3>
+                    <p class="price">2800 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img src="завантаження.jfif">
+                <div class="card-content">
+                    <h3>Будинок 4</h3>
+                    <p class="price">4500 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1472220625704-91e1462799b2">
+                <div class="card-content">
+                    <h3>Будинок 5</h3>
+                    <p class="price">1400 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9">
+                <div class="card-content">
+                    <h3>Будинок 6</h3>
+                    <p class="price">1400 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
+                <div class="card-content">
+                    <h3>Будинок 3a</h3>
+                    <p class="price">400 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img
+                    src="https://images.unsplash.com/photo-1464146072230-91cabc968266">
+                <div class="card-content">
+                    <h3>Будинок 3б</h3>
+                    <p class="price">400 грн</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- АЛЬТАНКИ -->
+    <!-- GAZEBO -->
     <section id="gazebo" class="section reveal">
-        <div class="container">
-            <h2 class="section-title">Альтанки</h2>
-            <div class="grid-gallery">
-                <article class="card"><img src="альтанка.webp" alt="Альтанка 1"><div class="card-content"><h3>Альтанка 1</h3><p class="price">600 грн</p><button class="btn-view">Переглянути</button></div></article>
-                <article class="card"><img src="альтанка.webp" alt="Альтанка 2"><div class="card-content"><h3>Альтанка 2</h3><p class="price">800 грн</p><button class="btn-view">Переглянути</button></div></article>
+        <h2 class="NameUnit">Альтанки</h2>
+        <div class="grid">
+            <div class="card" onclick="openModal(this)"><img src="альтанка.webp">
+                <div class="card-content">
+                    <h3>Альтанка</h3>
+                    <p class="price">600 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img src="альтанка.webp">
+                <div class="card-content">
+                    <h3>Альтанка</h3>
+                    <p class="price">800 грн</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- КОНТАКТИ -->
     <section id="contacts" class="section reveal">
-        <div class="container">
-            <h2 class="section-title">Контакти</h2>
-            <div class="contacts-wrapper">
-                <div class="contact-info">
-                    <h3>📞 Телефон</h3>
-                    <a href="tel:+380673651044" class="contact-link">+380 67 365 1044</a>
-                </div>
-                <div class="maps-container">
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5097901.002668126!2d19.072265624999996!3d51.39920565355378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1" loading="lazy"></iframe>
-                </div>
+        <h2 class="NameUnit">Контакти</h2>
+        <a href="tel:+380673651044" class="contacts">Телефон: +380 67 365 1044</a><br>
+        <div class="grid">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5097901.002668126!2d19.072265624999996!3d51.39920565355378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472989d0a9e4b311%3A0xe34b59a6c82ddbe9!2z0JPQvtC70YPQsdC-0LUg0L7Qt9C10YDQvg!5e0!3m2!1suk!2sua!4v1775080949191!5m2!1suk!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div onclick="openModal(this)">
+                <img class="map" src="плансхема.jpg">
             </div>
         </div>
     </section>
 
-    <!-- ФУТЕР -->
-    <footer class="footer">
-        <p>&copy; 2026 База відпочинку «Голубе озеро»</p>
+    <footer>
+        <p>© 2026 База відпочинку «Голубе озеро»</p>
     </footer>
 
-    <!-- МОДАЛЬ -->
-    <div id="modal" class="modal">
-        <button class="modal-close">✕</button>
-        <img id="modal-img" alt="">
+    <!-- MODAL -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <img id="modal-img">
     </div>
 
-    <script src="script.js" defer></script>
+    <script>
+        // scroll animation
+        const reveals = document.querySelectorAll('.reveal');
+        window.addEventListener('scroll', () => {
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) {
+                    el.classList.add('active');
+                }
+            });
+        });
+
+        // modal gallery
+        function openModal(card) {
+            const img = card.querySelector('img').src;
+            document.getElementById('modal-img').src = img;
+            document.getElementById('modal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+
 </body>
+
 </html>
