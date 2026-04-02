@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-
+  overflow-x: hidden;
   background-image: url("голубе озеро.jpg");
   background-size: cover;
   background-position: center;
@@ -325,9 +325,21 @@ header {
   flex-wrap: wrap;
 }
 
+.about-container {
+  display: flex;
+  align-items: center; /* вирівнює по вертикалі */
+  gap: 40px;
+}
+
+.about-video {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .about-video iframe {
-  width: 150%;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* автоматична висота */
   border-radius: 15px;
 }
 
@@ -413,5 +425,14 @@ a.contacts[href^="tel:"] {
   nav a {
     font-size: 13px;
     padding: 6px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-video {
+    max-width: 100%;
   }
 }
