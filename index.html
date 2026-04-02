@@ -25,50 +25,64 @@
 
     <header>
         <div class="overlay">
-            <h1>База відпочинку Голубе Озеро</h1>
-            <p>Комфорт і стильний відпочинок</p>
+            Голубе Озеро
+            <span>Ваш ідеальний відпочинок серед природи 🌲🌊</span>
         </div>
+
     </header>
 
     <section id="about" class="section reveal">
-        <h2 class="about-us">Про нас</h2>
+        <h2 class="NameUnit">Про нас</h2>
         <div class="about-container">
             <div class="about-text">
-                <p>💙 Відпочинок, який ви запам’ятаєте надовго!
+                <p class="intro">💙 <strong>Відпочинок, який ви запам’ятаєте надовго!</strong></p>
 
-                    Запрошуємо вас на базу відпочинку «Голубе озеро» — справжній куточок природи серед соснового лісу
-                    біля кришталево чистої води 🌲🌊
+                <p>Запрошуємо вас на базу відпочинку <span>«Голубе озеро»</span> — справжній куточок природи серед
+                    соснового лісу біля кришталево чистої води 🌲🌊</p>
 
-                    ✨ Тут на вас чекає:
-                    • чистий піщаний пляж і прозоре блакитне озеро
-                    • затишні будиночки та комфортні номери
-                    • альтанки з мангалами для компаній
-                    • кафе та смачна кухня
-                    • активний відпочинок: катамарани, риболовля, спорт
-                    • дитячі та сімейні розваги
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>✨ Тут на вас чекає:</h3>
+                        <ul>
+                            <li>чистий піщаний пляж і прозоре блакитне озеро</li>
+                            <li>затишні будиночки та комфортні номери</li>
+                            <li>альтанки з мангалами для компаній</li>
+                            <li>кафе та смачна кухня</li>
+                            <li>активний відпочинок: катамарани, риболовля, спорт</li>
+                            <li>дитячі та сімейні розваги</li>
+                        </ul>
+                    </div>
 
-                    💫 Ідеальне місце для:
-                    ✔ сімейного відпочинку
-                    ✔ романтичних вихідних
-                    ✔ святкувань та корпоративів
+                    <div class="feature-item">
+                        <h3>💫 Ідеальне місце для:</h3>
+                        <ul class="check-list">
+                            <li>сімейного відпочинку</li>
+                            <li>романтичних вихідних</li>
+                            <li>святкувань та корпоративів</li>
+                        </ul>
+                    </div>
+                </div>
 
-                    Відчуйте справжній релакс далеко від міської метушні — свіже повітря, тиша і неймовірні краєвиди
-                    гарантовані 🌅
+                <p class="quote">Відчуйте справжній релакс далеко від міської метушні — свіже повітря, тиша і неймовірні
+                    краєвиди гарантовані 🌅</p>
 
-                    📍 Лише кілька годин від Києва — і ви в іншому світі
-
-                    📲 Бронюйте свій відпочинок вже сьогодні!
-                    .</p>
+                <div class="cta-box">
+                    <p>📍 Лише кілька годин від Києва — і ви в іншому світі</p>
+                    <p class="call-to-action">📲 Бронюйте свій відпочинок вже сьогодні!</p>
+                </div>
             </div>
             <div class="about-video">
-                <iframe src="https://www.youtube.com/watch?v=t1rFtR3tCX0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/t1rFtR3tCX0?si=902jXEv92MKZuI5H"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
     <!-- ROOMS -->
     <section id="rooms" class="section reveal">
-        <h2>Номери (4)</h2>
+        <h2 class="NameUnit">Номери готелю</h2>
         <div class="grid">
             <div class="card" onclick="openModal(this)"><img
                     src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
@@ -103,7 +117,7 @@
 
     <!-- HOUSES -->
     <section id="houses" class="section reveal">
-        <h2>Будинки (8)</h2>
+        <h2 class="NameUnit">Будинки (8)</h2>
         <div class="grid">
             <!-- 8 cards -->
             <div class="card" onclick="openModal(this)"><img
@@ -166,20 +180,36 @@
 
     <!-- GAZEBO -->
     <section id="gazebo" class="section reveal">
-        <h2>Альтанки</h2>
+        <h2 class="NameUnit">Альтанки</h2>
         <div class="grid">
             <div class="card" onclick="openModal(this)"><img src="альтанка.webp">
                 <div class="card-content">
                     <h3>Альтанка</h3>
-                    <p class="price">600-800 грн</p>
+                    <p class="price">600 грн</p>
+                </div>
+            </div>
+            <div class="card" onclick="openModal(this)"><img src="альтанка.webp">
+                <div class="card-content">
+                    <h3>Альтанка</h3>
+                    <p class="price">800 грн</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contacts" class="section reveal">
-        <h2 class="contacts">Контакти</h2>
-        <p class="contacts">+380 67 365 1044</p>
+        <h2 class="NameUnit">Контакти</h2>
+        <a href="tel:+380673651044" class="contacts">Телефон: +380 67 365 1044</a><br>
+        <div class="grid">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5097901.002668126!2d19.072265624999996!3d51.39920565355378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472989d0a9e4b311%3A0xe34b59a6c82ddbe9!2z0JPQvtC70YPQsdC-0LUg0L7Qt9C10YDQvg!5e0!3m2!1suk!2sua!4v1775080949191!5m2!1suk!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div onclick="openModal(this)">
+                <img class="map" src="плансхема.jpg">
+            </div>
+        </div>
     </section>
 
     <footer>
