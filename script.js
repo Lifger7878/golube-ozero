@@ -1,90 +1,106 @@
-// script.js
+// ===== НАВІГАЦІЯ МОБІЛЬНА ВЕРСІЯ =====
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    const navLinks = document.querySelectorAll('.nav-link');
 
-// Mobile navigation function
-const mobileNavToggle = () => {
-    const nav = document.querySelector('.nav');
-    const toggleButton = document.querySelector('.nav-toggle');
+    // Меню мобільної версії
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
 
-    toggleButton.addEventListener('click', () => {
-        nav.classList.toggle('is-active');
-    });
-};
+        // Закриття меню при натисканні на посилання
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    }
 
-// Scroll animations using Intersection Observer API
-const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.animate');
-    const observerOptions = {
-        root: null,
-        threshold: 0.1
-    };
-
-    const observerCallback = (entries) => {
+    // ===== АНІМАЦІЯ ПРОКРУЧУВАННЯ =====
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
+                entry.target.classList.add('active');
                 observer.unobserve(entry.target);
             }
         });
-    };
+    }, { threshold: 0.1 });
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-    elements.forEach(element => observer.observe(element));
-};
+    reveals.forEach(reveal => observer.observe(reveal));
 
-// Enhanced modal gallery functionality
-const initModalGallery = () => {
-    const modals = document.querySelectorAll('.modal');
-    const images = document.querySelectorAll('.gallery img');
-    const closeButtons = document.querySelectorAll('.modal-close');
+    // ===== МОДАЛЬНА ГАЛЕРЕЯ =====
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalClose = document.querySelector('.modal-close');
+    const modalNext = document.querySelector('.modal-next');
+    const modalPrev = document.querySelector('.modal-prev');
+    let currentImageIndex = 0;
+    let allImages = [];
 
-    images.forEach((image, index) => {
-        image.addEventListener('click', () => {
-            modals[index].classList.add('is-active');
-            document.body.style.overflow = 'hidden'; // prevent scrolling behind the modal
+    function updateAllImages() {
+        allImages = Array.from(document.querySelectorAll('.card img')).map(img => img.src);
+    }
+
+    function openModal(src) {
+        updateAllImages();
+        currentImageIndex = allImages.indexOf(src);
+        modalImg.src = src;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % allImages.length;
+        modalImg.src = allImages[currentImageIndex];
+    }
+
+    function showPrevImage() {
+        currentImageIndex = (currentImageIndex - 1 + allImages.length) % allImages.length;
+        modalImg.src = allImages[currentImageIndex];
+    }
+
+    // Обробники для кликів на карти
+    document.querySelectorAll('.btn-view').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const card = e.target.closest('.card');
+            const img = card.querySelector('img');
+            openModal(img.src);
         });
     });
 
-    closeButtons.forEach((button, index) => {
-        button.addEventListener('click', () => {
-            modals[index].classList.remove('is-active');
-            document.body.style.overflow = 'auto';
-        });
+    // Обробники для модального вікна
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
     });
+    modalNext.addEventListener('click', showNextImage);
+    modalPrev.addEventListener('click', showPrevImage);
 
-    // Keyboard navigation
-    document.addEventListener('keyup', (event) => {
-        if (event.key === "Escape") {
-            modals.forEach(modal => modal.classList.remove('is-active'));
-            document.body.style.overflow = 'auto';
+    // Клавіатурна навігація в модалі
+    document.addEventListener('keydown', (e) => {
+        if (modal.classList.contains('active')) {
+            if (e.key === 'Escape') closeModal();
+            if (e.key === 'ArrowRight') showNextImage();
+            if (e.key === 'ArrowLeft') showPrevImage();
         }
     });
-};
 
-// Touch support for modal gallery
-const handleTouch = () => {
-    const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
-        modal.addEventListener('touchstart', (e) => {
-            const touch = e.touches[0];
-            const modalImage = modal.querySelector('img');
-            if (touch) {
-               const bounds = modalImage.getBoundingClientRect();
-               if (touch.clientX < bounds.left || touch.clientX > bounds.right ||
-                   touch.clientY < bounds.top || touch.clientY > bounds.bottom) {
-                   modal.classList.remove('is-active');
-               }
+    // ===== ПЛАВНА ПРОКРУТКА ДО ЯКОРІВ =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
-};
-
-// Initialize functions
-const init = () => {
-    mobileNavToggle();
-    animateOnScroll();
-    initModalGallery();
-    handleTouch();
-};
-
-// Run initialization
-document.addEventListener('DOMContentLoaded', init);
+});
