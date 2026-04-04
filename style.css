@@ -340,7 +340,7 @@ header {
 .about-video iframe,
 .about-video video {
   flex: 1;
-  min-width: 280px;
+  min-width: 250px;
   aspect-ratio: 16 / 9;
   border-radius: 15px;
 }
@@ -405,8 +405,9 @@ a.contacts[href^="tel:"] {
 
   /* 2. Розміри (змініть під себе) */
   width: 100%;
-  max-width: 500px; /* Максимальна ширина карти */
-  height: 400px;
+  max-width: 500px;
+  aspect-ratio: 16 / 11;
+  height: auto;
 
   /* 3. Цікавий стиль (закруглення та рамка) */
   border-radius: 40px; /* Сильне закруглення кутів */
