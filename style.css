@@ -332,15 +332,27 @@ header {
 }
 
 .about-video {
-  flex: 1;
-  max-width: 600px;
-  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* щоб на мобілці переносилось */
 }
 
-.about-video iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9; /* автоматична висота */
+.about-video iframe,
+.about-video video {
+  flex: 1;
+  min-width: 280px;
+  aspect-ratio: 16 / 9;
   border-radius: 15px;
+}
+#gazebo .grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#gazebo .card {
+  width: 300px;
 }
 
 footer {
