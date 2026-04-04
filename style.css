@@ -344,6 +344,11 @@ header {
   aspect-ratio: 16 / 9;
   border-radius: 15px;
 }
+
+.about-video video {
+  background: black;
+}
+
 #gazebo .grid {
   display: flex;
   justify-content: center;
