@@ -370,6 +370,7 @@ footer {
 }
 .contacts {
   text-align: center;
+  margin-top: 20px;
   color: #333; /* Ваш колір замість синього (наприклад, темно-сірий) */
   text-decoration: none; /* Прибираємо підкреслення */
   font-weight: 600; /* Робимо шрифт трохи жирнішим */
