@@ -426,6 +426,26 @@ a.contacts[href^="tel:"] {
   filter: contrast(1) brightness(1); /* Повертаємо оригінальні кольори */
 }
 
+.modal button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.prev {
+  left: 20px;
+}
+.next {
+  right: 20px;
+}
+
 @media (max-width: 767px) {
   body {
     background-image: url("голубе\ озеро-mobile.webp");

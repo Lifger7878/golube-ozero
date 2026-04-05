@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Готель Paradise</title>
+    <title>База відпочинку "Голубе озеро"</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -85,25 +85,26 @@
     <section id="rooms" class="section reveal">
         <h2 class="NameUnit">Номери готелю</h2>
         <div class="grid">
-            <div class="card" onclick="openModal(this)"><img src="готель.jpg">
+            <div class="card" onclick="openGallery(this)" data-images="hotel/готель.jpg"><img src="hotel/готель.jpg">
                 <div class="card-content">
                     <h3>Номер 1</h3>
                     <p class="price">800 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="готель 2.jpg">
+            <div class="card" onclick="openGallery(this)" data-images="hotel/готель 2.jpg"><img
+                    src="hotel/готель 2.jpg">
                 <div class="card-content">
                     <h3>Номер 2</h3>
                     <p class="price">800 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="готель3.jpg">
+            <div class="card" onclick="openGallery(this)" data-images="hotel/готель3.jpg"><img src="hotel/готель3.jpg">
                 <div class="card-content">
                     <h3>Номер 3</h3>
                     <p class="price">1200 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="готель4.jpg">
+            <div class="card" onclick="openGallery(this)" data-images="hotel/готель4.jpg"><img src="hotel/готель4.jpg">
                 <div class="card-content">
                     <h3>Номер 4</h3>
                     <p class="price">1200 грн</p>
@@ -117,49 +118,55 @@
         <h2 class="NameUnit">Будинки (8)</h2>
         <div class="grid">
             <!-- 8 cards -->
-            <div class="card" onclick="openModal(this)"><img src="baza5.jfif">
+            <div class="card" onclick="openGallery(this)"
+                data-images="houses/baza5.jfif, houses/дім10.jpg, houses/дім11.jpg, houses/дім12.jpg, houses/дім13.jpg, houses/дім14.jpg, houses/дім15.jpg, houses/дім16.jpg">
+                <img src="houses/baza5.jfif">
                 <div class="card-content">
                     <h3>Будинок 1</h3>
                     <p class="price">1800 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="дім2.jpg">
+            <div class="card" onclick="openGallery(this)"
+                data-images="houses/дім2.jpg, houses/дім21.jpg, houses/дім22.jpg, houses/дім23.jpg"><img
+                    src="houses/дім2.jpg">
                 <div class="card-content">
                     <h3>Будинок 2</h3>
                     <p class="price">1800 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="baza4.jfif">
+            <div class="card" onclick="openGallery(this)" data-images="houses/baza4.jfif"><img src="houses/baza4.jfif">
                 <div class="card-content">
                     <h3>Будинок 3</h3>
                     <p class="price">2800 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="дім 42.jpg">
+            <div class="card" onclick="openGallery(this)"
+                data-images="houses/дім 42.jpg,  houses/дім 4.jpg, houses/дім 42.jpg, houses/дім 41.jpg, houses/дім43.jpg, houses/дім44.jpg, houses/дім45.jpg, houses/дім46.jpg, houses/дім47.jpg, houses/дім48.jpg, houses/дім441.jpg, houses/дім442.jpg, houses/дім443.jpg, houses/дім444.jpg, houses/дім445.jpg, houses/дім446.jpg, houses/дім447.jpg">
+                <img src="houses/дім 42.jpg">
                 <div class="card-content">
                     <h3>Будинок 4</h3>
                     <p class="price">4500 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="дім5.jpg">
+            <div class="card" onclick="openGallery(this)" data-images="houses/дім5.jpg"><img src="houses/дім5.jpg">
                 <div class="card-content">
                     <h3>Будинок 5</h3>
                     <p class="price">1400 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="дім5.jpg">
+            <div class="card" onclick="openGallery(this)" data-images="houses/дім5.jpg"><img src="houses/дім5.jpg">
                 <div class="card-content">
                     <h3>Будинок 6</h3>
                     <p class="price">1400 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="дім5.jpg">
+            <div class="card" onclick="openGallery(this)" data-images="houses/дім5.jpg"><img src="houses/дім5.jpg">
                 <div class=" card-content">
                     <h3>Будинок 3a</h3>
                     <p class="price">400 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="дім5.jpg">
+            <div class="card" onclick="openGallery(this)" data-images="houses/дім5.jpg"><img src="houses/дім5.jpg">
                 <div class="card-content">
                     <h3>Будинок 3б</h3>
                     <p class="price">400 грн</p>
@@ -172,20 +179,25 @@
     <section id="gazebo" class="section reveal">
         <h2 class="NameUnit">Альтанки та ресторан</h2>
         <div class="grid">
-            <div class="card" onclick="openModal(this)"><img src="альтанка.webp">
+            <div class="card" onclick="openGallery(this)"
+                data-images="gazebo_rest/альтанка.jpg,gazebo_rest/альтанка 1.jpg,gazebo_rest/альтанка2.jpg, gazebo_rest/альтанка31.jpg, gazebo_rest/альтанка32.jpg, gazebo_rest/альтанка21.jpg">
+                <img src="gazebo_rest/альтанка.jpg">
                 <div class="card-content">
                     <h3>Альтанка</h3>
                     <p class="price">600 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)"><img src="альтанка.jpg">
+            <div class="card" onclick="openGallery(this)"
+                data-images="gazebo_rest/альтанка.webp, gazebo_rest/альтанка 1.jpg, gazebo_rest/альтанкадім4.jpg, gazebo_rest/альтанка31.jpg, gazebo_rest/альтанка32.jpg, gazebo_rest/альтанка21.jpg">
+                <img src="gazebo_rest/альтанка.webp">
                 <div class="card-content">
                     <h3>Альтанка</h3>
                     <p class="price">800 грн</p>
                 </div>
             </div>
-            <div class="card" onclick="openModal(this)">
-                <img src="ресторан.jpg">
+            <div class="card" onclick="openGallery(this)"
+                data-images="gazebo_rest/ресторан.jpg, gazebo_rest/ресторан в.jpg, gazebo_rest/ресторан5.jpg">
+                <img src="gazebo_rest/ресторан.jpg">
                 <div class="card-content">
                     <h3>🍽 Ресторан</h3>
                     <p class="price">бронювання</p>
@@ -216,7 +228,9 @@
 
     <!-- MODAL -->
     <div id="modal" class="modal" onclick="closeModal()">
+        <button class="prev" onclick="prevImage(event)">❮</button>
         <img id="modal-img">
+        <button class="next" onclick="nextImage(event)">❯</button>
     </div>
 
     <script>
@@ -225,22 +239,24 @@
         window.addEventListener('scroll', () => {
             reveals.forEach(el => {
                 const top = el.getBoundingClientRect().top;
-                if (top < window.innerHeight - 100) {
-                    el.classList.add('active');
-                }
+                if (top < window.innerHeight - 100) { el.classList.add('active'); }
             });
-        });
-
-        // modal gallery
-        function openModal(card) {
-            const img = card.querySelector('img').src;
-            document.getElementById('modal-img').src = img;
-            document.getElementById('modal').style.display = 'flex';
-        }
-        function closeModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+        }); // modal gallery let
+        currentImages = []; let currentIndex = 0; function openGallery(card) {
+            const
+                images = card.getAttribute("data-images"); currentImages = images.split(","); currentIndex = 0; showImage();
+            document.getElementById("modal").style.display = "flex";
+        } function showImage() {
+            document.getElementById("modal-img").src = currentImages[currentIndex];
+        } function nextImage(e) {
+            e.stopPropagation(); currentIndex = (currentIndex + 1) % currentImages.length; showImage();
+        } function
+            prevImage(e) {
+            e.stopPropagation(); currentIndex = (currentIndex - 1 + currentImages.length) %
+                currentImages.length; showImage();
+        } function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        } </script>
 
 </body>
 
