@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://golube-ozero.in.ua/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://golube-ozero.in.ua/blue_lake.jpg</image:loc>
+      <image:title>Голубе озеро</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://golube-ozero.in.ua/hotel/hotel.jpg</image:loc>
+      <image:title>Номер готелю Голубе озеро</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://golube-ozero.in.ua/gazebo_rest/restaurant.jpg</image:loc>
+      <image:title>Ресторан Голубого озера</image:title>
+    </image:image>
+  </url>
+</urlset>

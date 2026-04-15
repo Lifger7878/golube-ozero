@@ -1,21 +1,47 @@
-<!-- ================= HTML (index.html) ================= -->
 <!DOCTYPE html>
 <html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>База відпочинку "Голубе озеро"</title>
+    <title>База відпочинку Голубе озеро | Відпочинок для гостей з Києва</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="База відпочинку Голубе озеро в Овручі — будинки, готель, альтанки, ресторан і пляж. Зручний відпочинок для гостей з Києва та області.">
+    <meta name="keywords"
+        content="база відпочинку Київ, відпочинок біля Києва, база відпочинку для гостей з Києва, Овруч, Голубе озеро, будинки біля озера, альтанки, відпочинок">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://golube-ozero.in.ua/">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="База відпочинку Голубе озеро | Відпочинок для гостей з Києва">
+    <meta property="og:description"
+        content="Відпочинок у Голубому озері в Овручі: будинки, номери готелю, альтанки, ресторан і пляж для гостей з Києва та області.">
+    <meta property="og:url" content="https://golube-ozero.in.ua/">
+    <meta property="og:image" content="https://golube-ozero.in.ua/blue_lake.jpg">
+    <meta property="og:site_name" content="Голубе озеро">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="blue_lake.jpg">
     <link rel="stylesheet" href="style.css">
-    <meta name="google-site-verification" content="Be1cJyn8rnAOQNQMxCBISub29xbreIEP8h3Qlr6_0Cw" />
 </head>
 
 <body>
 
-    <nav>
-        <ul>
+    <nav aria-label="Головна навігація">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"
+            aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul id="main-menu">
             <li><a href="#about">Про нас</a></li>
             <li><a href="#rooms">Номери</a></li>
             <li><a href="#houses">Будинки</a></li>
@@ -26,202 +52,231 @@
 
     <header>
         <div class="overlay">
-            Голубе Озеро
+            <h1>Голубе Озеро</h1>
             <span>Ваш ідеальний відпочинок серед природи 🌲🌊</span>
         </div>
 
     </header>
 
-    <section id="about" class="section reveal">
-        <h2 class="NameUnit">Про нас</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p class="intro">💙 <strong>Відпочинок, який ви запам’ятаєте надовго!</strong></p>
+    <main>
+        <section id="about" class="section reveal">
+            <h2 class="NameUnit">Про нас</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p class="intro">💙 <strong>Відпочинок, який ви запам’ятаєте надовго!</strong></p>
 
-                <p>Запрошуємо вас на базу відпочинку <span>«Голубе озеро»</span> — справжній куточок природи серед
-                    соснового лісу біля кришталево чистої води 🌲🌊</p>
+                    <p>Запрошуємо вас на базу відпочинку <span>«Голубе озеро»</span> — справжній куточок природи серед
+                        соснового лісу біля кришталево чистої води 🌲🌊</p>
 
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <h3>✨ Тут на вас чекає:</h3>
-                        <ul>
-                            <li>чистий піщаний пляж і прозоре блакитне озеро</li>
-                            <li>затишні будиночки та комфортні номери</li>
-                            <li>альтанки з мангалами для компаній</li>
-                            <li>кафе та смачна кухня</li>
-                            <li>активний відпочинок: катамарани, риболовля, спорт</li>
-                            <li>дитячі та сімейні розваги</li>
-                        </ul>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <h3>✨ Тут на вас чекає:</h3>
+                            <ul>
+                                <li>чистий піщаний пляж і прозоре блакитне озеро</li>
+                                <li>затишні будиночки та комфортні номери</li>
+                                <li>альтанки з мангалами для компаній</li>
+                                <li>кафе та смачна кухня</li>
+                                <li>активний відпочинок: катамарани, риболовля, спорт</li>
+                                <li>дитячі та сімейні розваги</li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-item">
+                            <h3>💫 Ідеальне місце для:</h3>
+                            <ul class="check-list">
+                                <li>сімейного відпочинку</li>
+                                <li>романтичних вихідних</li>
+                                <li>святкувань та корпоративів</li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <div class="feature-item">
-                        <h3>💫 Ідеальне місце для:</h3>
-                        <ul class="check-list">
-                            <li>сімейного відпочинку</li>
-                            <li>романтичних вихідних</li>
-                            <li>святкувань та корпоративів</li>
-                        </ul>
+                    <p class="quote">Відчуйте справжній релакс далеко від міської метушні — свіже повітря, тиша і
+                        неймовірні
+                        краєвиди гарантовані 🌅</p>
+
+                    <div class="cta-box">
+                        <p>📍 Лише кілька годин від Києва — і ви в іншому світі</p>
+                        <p>Зручне місце для відпочинку на вихідні для гостей з Києва та Київської області.</p>
+                        <a class="call-to-action" href="#contacts">📲 Бронюйте свій відпочинок вже сьогодні!</a>
                     </div>
                 </div>
+                <div class="about-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/t1rFtR3tCX0?si=902jXEv92MKZuI5H"
+                        title="Відео на базі Голубе озеро" frameborder="0" loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video src="blue_lake.mp4" controls preload="metadata" poster="blue_lake.jpg"
+                        title="Відео Голубого озера" playsinline>
+                        Ваш браузер не підтримує відео
+                    </video>
+                </div>
+            </div>
+        </section>
 
-                <p class="quote">Відчуйте справжній релакс далеко від міської метушні — свіже повітря, тиша і неймовірні
-                    краєвиди гарантовані 🌅</p>
+        <!-- ROOMS -->
+        <section id="rooms" class="section reveal">
+            <h2 class="NameUnit">Номери готелю</h2>
+            <div class="grid">
+                <div class="card" onclick="openGallery(this)" data-images="hotel/hotel.jpg"><img src="hotel/hotel.jpg"
+                        alt="Номер 1 готелю Голубе озеро" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <h3>Номер 1</h3>
+                        <p class="price">800 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)" data-images="hotel/hotel_2.jpg"><img
+                        src="hotel/hotel_2.jpg" alt="Номер 2 готелю Голубе озеро" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <h3>Номер 2</h3>
+                        <p class="price">800 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)" data-images="hotel/hotel_3.jpg"><img
+                        src="hotel/hotel_3.jpg" alt="Номер 3 готелю Голубе озеро" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <h3>Номер 3</h3>
+                        <p class="price">1200 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)" data-images="hotel/hotel_4.jpg"><img
+                        src="hotel/hotel_4.jpg" alt="Номер 4 готелю Голубе озеро" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <h3>Номер 4</h3>
+                        <p class="price">1200 грн</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="cta-box">
-                    <p>📍 Лише кілька годин від Києва — і ви в іншому світі</p>
-                    <p class="call-to-action">📲 Бронюйте свій відпочинок вже сьогодні!</p>
+        <!-- HOUSES -->
+        <section id="houses" class="section reveal">
+            <h2 class="NameUnit">Будинки</h2>
+            <div class="grid">
+                <!-- 8 cards -->
+                <div class="card" onclick="openGallery(this)"
+                    data-images="houses/base_5.jfif, houses/house_10.jpg, houses/house_11.jpg, houses/house_12.jpg, houses/house_13.jpg, houses/house_14.jpg, houses/house_15.jpg, houses/house_16.jpg">
+                    <img src="houses/base_5.jfif" alt="Будинок 1 на базі відпочинку Голубе озеро" loading="lazy"
+                        decoding="async">
+                    <div class="card-content">
+                        <h3>Будинок 1</h3>
+                        <p class="price">1800 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)"
+                    data-images="houses/house_25.jpg, houses/house_2.jpg, houses/house_22.jpg, houses/house_23.jpg">
+                    <img src="houses/house_24.jpg" alt="Будинок 2 на базі відпочинку Голубе озеро" loading="lazy"
+                        decoding="async">
+                    <div class="card-content">
+                        <h3>Будинок 2</h3>
+                        <p class="price">1800 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)" data-images="houses/base_4.jfif"><img
+                        src="houses/base_4.jfif" alt="Будинок 3 на базі відпочинку Голубе озеро" loading="lazy"
+                        decoding="async">
+                    <div class="card-content">
+                        <h3>Будинок 3</h3>
+                        <p class="price">2800 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)"
+                    data-images="houses/house_42.jpg,  houses/house_4.jpg, houses/house_42.jpg, houses/house_41.jpg, houses/house_43.jpg, houses/house_44.jpg, houses/house_45.jpg, houses/house_46.jpg, houses/house_47.jpg, houses/house_48.jpg, houses/house_441.jpg, houses/house_442.jpg, houses/house_443.jpg, houses/house_444.jpg, houses/house_445.jpg, houses/house_446.jpg, houses/house_447.jpg">
+                    <img src="houses/house_42.jpg" alt="Будинок 4 на базі відпочинку Голубе озеро" loading="lazy"
+                        decoding="async">
+                    <div class="card-content">
+                        <h3>Будинок 4</h3>
+                        <p class="price">4500 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)"
+                    data-images="houses/house_5.jpg, houses/house_65.jpg, houses/house_56.jpg">
+                    <img src="houses/house_5.jpg" alt="Будинок 5 на базі відпочинку Голубе озеро" loading="lazy"
+                        decoding="async">
+                    <div class="card-content">
+                        <h3>Будинок 5</h3>
+                        <p class="price">1400 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)"
+                    data-images="houses/house_62.jpg, houses/house_5.jpg, houses/house_65.jpg, houses/house_56.jpg ">
+                    <img src="houses/house_62.jpg" alt="Будинок 6 на базі відпочинку Голубе озеро" loading="lazy"
+                        decoding="async">
+                    <div class="card-content">
+                        <h3>Будинок 6</h3>
+                        <p class="price">1400 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)" data-images="houses/house_5.jpg,">
+                    <img src="houses/house_5.jpg" alt="Будинок 3а на базі відпочинку Голубе озеро" loading="lazy"
+                        decoding="async">
+                    <div class=" card-content">
+                        <h3>Будинок 3a</h3>
+                        <p class="price">400 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)" data-images="houses/house_5.jpg">
+                    <img src="houses/house_5.jpg" alt="Будинок 3б на базі відпочинку Голубе озеро" loading="lazy"
+                        decoding="async">
+                    <div class="card-content">
+                        <h3>Будинок 3б</h3>
+                        <p class="price">400 грн</p>
+                    </div>
                 </div>
             </div>
-            <div class="about-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/t1rFtR3tCX0?si=902jXEv92MKZuI5H"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <video src="голубе_озеро.mp4" controls>Ваш браузер не підтримує відео</video>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ROOMS -->
-    <section id="rooms" class="section reveal">
-        <h2 class="NameUnit">Номери готелю</h2>
-        <div class="grid">
-            <div class="card" onclick="openGallery(this)" data-images="hotel/готель.jpg"><img src="hotel/готель.jpg">
-                <div class="card-content">
-                    <h3>Номер 1</h3>
-                    <p class="price">800 грн</p>
+        <!-- GAZEBO -->
+        <section id="gazebo" class="section reveal">
+            <h2 class="NameUnit">Альтанки та ресторан</h2>
+            <div class="grid">
+                <div class="card" onclick="openGallery(this)"
+                    data-images="gazebo_rest/gazebo.jpg,gazebo_rest/gazebo_1.jpg,gazebo_rest/gazebo_2.jpg, gazebo_rest/gazebo_31.jpg, gazebo_rest/gazebo_32.jpg, gazebo_rest/gazebo_21.jpg">
+                    <img src="gazebo_rest/gazebo.jpg" alt="Альтанка на базі відпочинку Голубе озеро" loading="lazy"
+                        decoding="async">
+                    <div class="card-content">
+                        <h3>Альтанка</h3>
+                        <p class="price">600 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)"
+                    data-images="gazebo_rest/gazebo.webp, gazebo_rest/gazebo_1.jpg, gazebo_rest/gazebo_building_4.jpg, gazebo_rest/gazebo_31.jpg, gazebo_rest/gazebo_32.jpg, gazebo_rest/gazebo_21.jpg">
+                    <img src="gazebo_rest/gazebo.webp" alt="Велика альтанка на базі відпочинку Голубе озеро"
+                        loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <h3>Альтанка</h3>
+                        <p class="price">800 грн</p>
+                    </div>
+                </div>
+                <div class="card" onclick="openGallery(this)"
+                    data-images="gazebo_rest/restaurant.jpg, gazebo_rest/restaurant_v.jpg, gazebo_rest/restaurant_5.jpg">
+                    <img src="gazebo_rest/restaurant.jpg" alt="Ресторан на базі відпочинку Голубе озеро" loading="lazy"
+                        decoding="async">
+                    <div class="card-content">
+                        <h3>🍽 Ресторан</h3>
+                        <p class="price">бронювання</p>
+                    </div>
                 </div>
             </div>
-            <div class="card" onclick="openGallery(this)" data-images="hotel/готель 2.jpg"><img
-                    src="hotel/готель 2.jpg">
-                <div class="card-content">
-                    <h3>Номер 2</h3>
-                    <p class="price">800 грн</p>
-                </div>
-            </div>
-            <div class="card" onclick="openGallery(this)" data-images="hotel/готель3.jpg"><img src="hotel/готель3.jpg">
-                <div class="card-content">
-                    <h3>Номер 3</h3>
-                    <p class="price">1200 грн</p>
-                </div>
-            </div>
-            <div class="card" onclick="openGallery(this)" data-images="hotel/готель4.jpg"><img src="hotel/готель4.jpg">
-                <div class="card-content">
-                    <h3>Номер 4</h3>
-                    <p class="price">1200 грн</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- HOUSES -->
-    <section id="houses" class="section reveal">
-        <h2 class="NameUnit">Будинки (8)</h2>
-        <div class="grid">
-            <!-- 8 cards -->
-            <div class="card" onclick="openGallery(this)"
-                data-images="houses/baza5.jfif, houses/дім10.jpg, houses/дім11.jpg, houses/дім12.jpg, houses/дім13.jpg, houses/дім14.jpg, houses/дім15.jpg, houses/дім16.jpg">
-                <img src="houses/baza5.jfif">
-                <div class="card-content">
-                    <h3>Будинок 1</h3>
-                    <p class="price">1800 грн</p>
-                </div>
-            </div>
-            <div class="card" onclick="openGallery(this)"
-                data-images="houses/дім2.jpg, houses/дім21.jpg, houses/дім22.jpg, houses/дім23.jpg"><img
-                    src="houses/дім2.jpg">
-                <div class="card-content">
-                    <h3>Будинок 2</h3>
-                    <p class="price">1800 грн</p>
-                </div>
-            </div>
-            <div class="card" onclick="openGallery(this)" data-images="houses/baza4.jfif"><img src="houses/baza4.jfif">
-                <div class="card-content">
-                    <h3>Будинок 3</h3>
-                    <p class="price">2800 грн</p>
-                </div>
-            </div>
-            <div class="card" onclick="openGallery(this)"
-                data-images="houses/дім 42.jpg,  houses/дім 4.jpg, houses/дім 42.jpg, houses/дім 41.jpg, houses/дім43.jpg, houses/дім44.jpg, houses/дім45.jpg, houses/дім46.jpg, houses/дім47.jpg, houses/дім48.jpg, houses/дім441.jpg, houses/дім442.jpg, houses/дім443.jpg, houses/дім444.jpg, houses/дім445.jpg, houses/дім446.jpg, houses/дім447.jpg">
-                <img src="houses/дім 42.jpg">
-                <div class="card-content">
-                    <h3>Будинок 4</h3>
-                    <p class="price">4500 грн</p>
-                </div>
-            </div>
-            <div class="card" onclick="openGallery(this)" data-images="houses/дім5.jpg"><img src="houses/дім5.jpg">
-                <div class="card-content">
-                    <h3>Будинок 5</h3>
-                    <p class="price">1400 грн</p>
-                </div>
-            </div>
-            <div class="card" onclick="openGallery(this)" data-images="houses/дім5.jpg"><img src="houses/дім5.jpg">
-                <div class="card-content">
-                    <h3>Будинок 6</h3>
-                    <p class="price">1400 грн</p>
-                </div>
-            </div>
-            <div class="card" onclick="openGallery(this)" data-images="houses/дім5.jpg"><img src="houses/дім5.jpg">
-                <div class=" card-content">
-                    <h3>Будинок 3a</h3>
-                    <p class="price">400 грн</p>
-                </div>
-            </div>
-            <div class="card" onclick="openGallery(this)" data-images="houses/дім5.jpg"><img src="houses/дім5.jpg">
-                <div class="card-content">
-                    <h3>Будинок 3б</h3>
-                    <p class="price">400 грн</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="contacts" class="section reveal">
+            <h2 class="NameUnit">Контакти</h2>
+            <a href="tel:+380673651044" class="contacts">Телефон: +380 67 365 1044</a><br>
+            <a href="tel:+380985009607" class="contacts">Телефон: +380 98 500 9607</a><br>
+            <div class="grid">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5097901.002668126!2d19.072265624999996!3d51.39920565355378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472989d0a9e4b311%3A0xe34b59a6c82ddbe9!2z0JPQvtC70YPQsdC-0LUg0L7Qt9C10YDQvg!5e0!3m2!1suk!2sua!4v1775080949191!5m2!1suk!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Голубе озеро база відпочинку на карті"></iframe>
 
-    <!-- GAZEBO -->
-    <section id="gazebo" class="section reveal">
-        <h2 class="NameUnit">Альтанки та ресторан</h2>
-        <div class="grid">
-            <div class="card" onclick="openGallery(this)"
-                data-images="gazebo_rest/альтанка.jpg,gazebo_rest/альтанка 1.jpg,gazebo_rest/альтанка2.jpg, gazebo_rest/альтанка31.jpg, gazebo_rest/альтанка32.jpg, gazebo_rest/альтанка21.jpg">
-                <img src="gazebo_rest/альтанка.jpg">
-                <div class="card-content">
-                    <h3>Альтанка</h3>
-                    <p class="price">600 грн</p>
+                <div onclick="openGallery(this)" data-images="layout_schema.jpg">
+                    <img class="map" src="layout_schema.jpg" alt="План-схема бази відпочинку Голубе озеро"
+                        loading="lazy" decoding="async">
                 </div>
             </div>
-            <div class="card" onclick="openGallery(this)"
-                data-images="gazebo_rest/альтанка.webp, gazebo_rest/альтанка 1.jpg, gazebo_rest/альтанкадім4.jpg, gazebo_rest/альтанка31.jpg, gazebo_rest/альтанка32.jpg, gazebo_rest/альтанка21.jpg">
-                <img src="gazebo_rest/альтанка.webp">
-                <div class="card-content">
-                    <h3>Альтанка</h3>
-                    <p class="price">800 грн</p>
-                </div>
-            </div>
-            <div class="card" onclick="openGallery(this)"
-                data-images="gazebo_rest/ресторан.jpg, gazebo_rest/ресторан в.jpg, gazebo_rest/ресторан5.jpg">
-                <img src="gazebo_rest/ресторан.jpg">
-                <div class="card-content">
-                    <h3>🍽 Ресторан</h3>
-                    <p class="price">бронювання</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacts" class="section reveal">
-        <h2 class="NameUnit">Контакти</h2>
-        <a href="tel:+380673651044" class="contacts">Телефон: +380 67 365 1044</a><br>
-        <a href="tel:+380985009607" class="contacts">Телефон: +380 98 500 9607</a><br>
-        <div class="grid">
-            <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5097901.002668126!2d19.072265624999996!3d51.39920565355378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472989d0a9e4b311%3A0xe34b59a6c82ddbe9!2z0JPQvtC70YPQsdC-0LUg0L7Qt9C10YDQvg!5e0!3m2!1suk!2sua!4v1775080949191!5m2!1suk!2sua"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            <div onclick="openGallery(this)" data-images="плансхема.jpg">
-                <img class="map" src="плансхема.jpg">
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p>© 2026 База відпочинку «Голубе озеро»</p>
@@ -229,36 +284,287 @@
 
     <!-- MODAL -->
     <div id="modal" class="modal" onclick="closeModal()">
-        <button class="prev" onclick="prevImage(event)">❮</button>
-        <img id="modal-img">
-        <button class="next" onclick="nextImage(event)">❯</button>
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-modal" type="button" aria-label="Закрити галерею" onclick="closeModal()">✕</button>
+            <button class="prev" type="button" aria-label="Попереднє фото" onclick="prevImage(event)">❮</button>
+            <img id="modal-img" alt="Фото галереї">
+            <button class="next" type="button" aria-label="Наступне фото" onclick="nextImage(event)">❯</button>
+            <div class="modal-meta">
+                <p id="modal-title"></p>
+                <p id="modal-counter"></p>
+            </div>
+            <div id="modal-thumbs" class="modal-thumbs"></div>
+        </div>
     </div>
 
     <script>
-        // scroll animation
+        document.documentElement.classList.add('js');
         const reveals = document.querySelectorAll('.reveal');
-        window.addEventListener('scroll', () => {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        const navLinks = document.querySelectorAll('#main-menu a');
+        const pageSections = document.querySelectorAll('main section[id]');
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modal-img');
+        const modalTitle = document.getElementById('modal-title');
+        const modalCounter = document.getElementById('modal-counter');
+        const modalThumbs = document.getElementById('modal-thumbs');
+
+        if (menuToggle && nav) {
+            menuToggle.addEventListener('click', () => {
+                const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', String(!expanded));
+                nav.classList.toggle('menu-open', !expanded);
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    nav.classList.remove('menu-open');
+                });
+            });
+        }
+
+        const sectionObserver = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    }
+
+                    navLinks.forEach(link => {
+                        const isCurrent = link.getAttribute('href') === `#${entry.target.id}`;
+                        link.classList.toggle('active', isCurrent);
+                    });
+                });
+            },
+            {
+                rootMargin: '-35% 0px -45% 0px',
+                threshold: 0.01
+            }
+        );
+
+        pageSections.forEach(section => sectionObserver.observe(section));
+
+        function revealOnScroll() {
             reveals.forEach(el => {
                 const top = el.getBoundingClientRect().top;
-                if (top < window.innerHeight - 100) { el.classList.add('active'); }
+                if (top < window.innerHeight - 100) {
+                    el.classList.add('active');
+                }
             });
-        }); // modal gallery let
-        currentImages = []; let currentIndex = 0; function openGallery(card) {
-            const
-                images = card.getAttribute("data-images"); currentImages = images.split(","); currentIndex = 0; showImage();
-            document.getElementById("modal").style.display = "flex";
-        } function showImage() {
-            document.getElementById("modal-img").src = currentImages[currentIndex];
-        } function nextImage(e) {
-            e.stopPropagation(); currentIndex = (currentIndex + 1) % currentImages.length; showImage();
-        } function
-            prevImage(e) {
-            e.stopPropagation(); currentIndex = (currentIndex - 1 + currentImages.length) %
-                currentImages.length; showImage();
-        } function closeModal() {
-            document.getElementById("modal").style.display = "none";
-        } </script>
+        }
 
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+
+        let currentImages = [];
+        let currentIndex = 0;
+        let currentTitle = '';
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function buildThumbs() {
+            modalThumbs.innerHTML = '';
+
+            currentImages.forEach((img, index) => {
+                const thumb = document.createElement('button');
+                thumb.type = 'button';
+                thumb.className = 'thumb-btn';
+                thumb.setAttribute('aria-label', `Відкрити фото ${index + 1}`);
+                thumb.innerHTML = `<img src="${img}" alt="Мініатюра ${index + 1}">`;
+                thumb.addEventListener('click', () => {
+                    currentIndex = index;
+                    showImage();
+                });
+                modalThumbs.appendChild(thumb);
+            });
+        }
+
+        function openGallery(card) {
+            const images = (card.getAttribute('data-images') || '')
+                .split(',')
+                .map(image => image.trim())
+                .filter(Boolean);
+
+            if (!images.length) {
+                return;
+            }
+
+            currentImages = images;
+            currentIndex = 0;
+            currentTitle = card.querySelector('h3')?.textContent?.trim() || 'Галерея';
+            buildThumbs();
+            showImage();
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function showImage() {
+            if (!currentImages.length) {
+                return;
+            }
+
+            modalImage.src = currentImages[currentIndex];
+            modalTitle.textContent = currentTitle;
+            modalCounter.textContent = `${currentIndex + 1} / ${currentImages.length}`;
+
+            const thumbButtons = modalThumbs.querySelectorAll('.thumb-btn');
+            thumbButtons.forEach((button, idx) => {
+                button.classList.toggle('active', idx === currentIndex);
+            });
+        }
+
+        function nextImage(e) {
+            if (e) {
+                e.stopPropagation();
+            }
+            currentIndex = (currentIndex + 1) % currentImages.length;
+            showImage();
+        }
+
+        function prevImage(e) {
+            if (e) {
+                e.stopPropagation();
+            }
+            currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+            showImage();
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', event => {
+            if (modal.style.display !== 'flex') {
+                return;
+            }
+
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+
+            if (event.key === 'ArrowRight') {
+                currentIndex = (currentIndex + 1) % currentImages.length;
+                showImage();
+            }
+
+            if (event.key === 'ArrowLeft') {
+                currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+                showImage();
+            }
+        });
+
+        document.querySelectorAll('.card[data-images], #contacts [data-images]').forEach(card => {
+            const count = (card.getAttribute('data-images') || '')
+                .split(',')
+                .map(image => image.trim())
+                .filter(Boolean).length;
+
+            if (count > 1) {
+                const badge = document.createElement('span');
+                badge.className = 'photo-badge';
+                badge.textContent = `${count} фото`;
+                card.appendChild(badge);
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 767 && menuToggle && nav) {
+                menuToggle.setAttribute('aria-expanded', 'false');
+                nav.classList.remove('menu-open');
+            }
+        });
+
+        modalImage.addEventListener('click', event => {
+            event.stopPropagation();
+        });
+
+        modalImage.addEventListener('touchstart', event => {
+            touchStartX = event.changedTouches[0].screenX;
+        }, { passive: true });
+
+        modalImage.addEventListener('touchend', event => {
+            touchEndX = event.changedTouches[0].screenX;
+            const distance = touchEndX - touchStartX;
+
+            if (Math.abs(distance) < 40) {
+                return;
+            }
+
+            if (distance < 0) {
+                nextImage();
+            } else {
+                prevImage();
+            }
+        }, { passive: true });
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "База відпочинку Голубе озеро",
+  "url": "https://golube-ozero.in.ua/",
+  "description": "База відпочинку в Овручі з будинками, номерами готелю, альтанками, рестораном і пляжем для гостей з Києва та області.",
+  "image": [
+    "https://golube-ozero.in.ua/blue_lake.jpg",
+    "https://golube-ozero.in.ua/hotel/hotel.jpg",
+    "https://golube-ozero.in.ua/gazebo_rest/restaurant.jpg"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Овруч",
+    "addressRegion": "Житомирська область",
+    "addressCountry": "UA"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Київ"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Київська область"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Житомирська область"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+380673651044",
+      "contactType": "reservations",
+      "availableLanguage": ["uk", "ru"]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+380985009607",
+      "contactType": "reservations",
+      "availableLanguage": ["uk", "ru"]
+    }
+  ],
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Пляж",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Ресторан",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Альтанки",
+      "value": true
+    }
+  ]
+}
+</script>
 </body>
 
 </html>
