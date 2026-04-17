@@ -479,6 +479,12 @@ main > .section:first-of-type {
   border-radius: var(--radius-md) 0 0 var(--radius-md);
 }
 
+.card-image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .card-vertical .card-image img {
   width: 100%;
   height: 100%;

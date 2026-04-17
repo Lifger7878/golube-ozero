@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://golube-ozero.in.ua/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -15,8 +15,16 @@
       <image:title>Номер готелю Голубе озеро</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://golube-ozero.in.ua/houses/base_5.jfif</image:loc>
+      <image:title>Будинки Голубого озера в Овручі</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://golube-ozero.in.ua/gazebo_rest/restaurant.jpg</image:loc>
       <image:title>Ресторан Голубого озера</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://golube-ozero.in.ua/gazebo_rest/gazebo.jpg</image:loc>
+      <image:title>Альтанки для відпочинку на природі в Овручі</image:title>
     </image:image>
   </url>
 </urlset>

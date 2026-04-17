@@ -4,32 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>База відпочинку Голубе озеро | Відпочинок для гостей з Києва</title>
+    <title>Голубе озеро Овруч | Будинки, готель, відпочинок на природі біля Києва</title>
 
     <meta name="description"
-        content="База відпочинку Голубе озеро в Овручі — будинки, готель, альтанки, ресторан і пляж. Зручний відпочинок для гостей з Києва та області.">
+        content="Голубе озеро в Овручі (Житомирська область): будинки, домики, номери готелю, альтанки, ресторан і пляж. Відпочинок на природі біля Києва та по всій Житомирській області.">
     <meta name="keywords"
-        content="база відпочинку Київ, відпочинок біля Києва, база відпочинку для гостей з Києва, Овруч, Голубе озеро, будинки біля озера, альтанки, відпочинок">
+        content="голубе озеро, голубе озеро овруч, овруч база відпочинку, будинки овруч, домики на природі, відпочинок біля києва, відпочинок житомирська область, база відпочинку овруч, готель овруч, природа біля озера, альтанки овруч">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="База відпочинку Голубе озеро">
+    <meta name="language" content="uk">
+    <meta name="geo.region" content="UA-18">
+    <meta name="geo.placename" content="Овруч, Житомирська область">
     <meta name="format-detection" content="telephone=yes">
     <meta name="theme-color" content="#0f172a">
     <link rel="canonical" href="https://golube-ozero.in.ua/">
+    <link rel="alternate" hreflang="uk-UA" href="https://golube-ozero.in.ua/">
+    <link rel="alternate" hreflang="x-default" href="https://golube-ozero.in.ua/">
     <meta property="og:locale" content="uk_UA">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="База відпочинку Голубе озеро | Відпочинок для гостей з Києва">
+    <meta property="og:title" content="Голубе озеро Овруч | Відпочинок на природі біля Києва">
     <meta property="og:description"
-        content="Відпочинок у Голубому озері в Овручі: будинки, номери готелю, альтанки, ресторан і пляж для гостей з Києва та області.">
+        content="База відпочинку в Овручі: будинки, домики, готель, альтанки, ресторан, пляж. Зручний відпочинок для гостей з Києва, Житомирської області та всієї України.">
     <meta property="og:url" content="https://golube-ozero.in.ua/">
     <meta property="og:image" content="https://golube-ozero.in.ua/blue_lake.jpg">
+    <meta property="og:image:alt" content="Голубе озеро в Овручі - база відпочинку на природі">
     <meta property="og:site_name" content="Голубе озеро">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Голубе озеро Овруч | Будинки і відпочинок на природі">
+    <meta name="twitter:description"
+        content="Овруч, Житомирська область: будинки, готель, альтанки, ресторан і пляж. Відпочинок біля Києва на Голубому озері.">
+    <meta name="twitter:image" content="https://golube-ozero.in.ua/blue_lake.jpg">
 
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260417-2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="preload" as="image" href="blue_lake.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+            rel="stylesheet">
+    </noscript>
+    <link rel="preload" as="image" href="blue_lake_poster.webp?v=20260417-2" fetchpriority="high">
+    <link rel="stylesheet" href="style.css?v=20260417-2">
 </head>
 
 <body>
@@ -108,7 +126,7 @@
                         title="Відео на базі Голубе озеро" frameborder="0" loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <video src="blue_lake.mp4" controls preload="metadata" poster="blue_lake.jpg"
+                    <video src="blue_lake.mp4" controls preload="metadata" poster="blue_lake_poster.webp"
                         title="Відео Голубого озера" playsinline>
                         Ваш браузер не підтримує відео
                     </video>
@@ -122,7 +140,15 @@
             <div class="cards-list">
                 <div class="card-vertical" onclick="openGallery(this)" data-images="hotel/hotel.jpg">
                     <div class="card-image">
-                        <img src="hotel/hotel.jpg" alt="Номер 1 готелю Голубе озеро" loading="lazy" decoding="async">
+                        <picture>
+                            <source type="image/webp"
+                                srcset="hotel/hotel_362w.webp?v=20260417-2 362w, hotel/hotel_724w.webp?v=20260417-2 724w"
+                                sizes="(max-width: 767px) calc(100vw - 56px), 362px">
+                            <img src="hotel/hotel_724w.webp?v=20260417-2"
+                                srcset="hotel/hotel_362w.webp?v=20260417-2 362w, hotel/hotel_724w.webp?v=20260417-2 724w"
+                                sizes="(max-width: 767px) calc(100vw - 56px), 362px" width="362" height="480"
+                                alt="Номер 1 готелю Голубе озеро" loading="lazy" decoding="async">
+                        </picture>
                     </div>
                     <div class="card-info">
                         <h3>Номер 1</h3>
@@ -368,6 +394,85 @@
 
     <script>
         document.documentElement.classList.add('js');
+        const ASSET_VERSION = '20260417-2';
+
+        function isLocalAssetUrl(url) {
+            if (!url) {
+                return false;
+            }
+
+            const trimmed = url.trim();
+            return !trimmed.startsWith('http://')
+                && !trimmed.startsWith('https://')
+                && !trimmed.startsWith('data:')
+                && !trimmed.startsWith('blob:')
+                && !trimmed.startsWith('tel:')
+                && !trimmed.startsWith('mailto:')
+                && !trimmed.startsWith('#');
+        }
+
+        function withAssetVersion(url) {
+            if (!isLocalAssetUrl(url)) {
+                return url;
+            }
+
+            const hasVersion = /([?&])v=/.test(url);
+            if (hasVersion) {
+                return url.replace(/([?&])v=[^&#]*/g, `$1v=${ASSET_VERSION}`);
+            }
+
+            return `${url}${url.includes('?') ? '&' : '?'}v=${ASSET_VERSION}`;
+        }
+
+        function applyAssetVersioning() {
+            document.querySelectorAll('img[src], video[src], source[src]').forEach(node => {
+                const src = node.getAttribute('src');
+                if (!src) {
+                    return;
+                }
+                node.setAttribute('src', withAssetVersion(src));
+            });
+
+            document.querySelectorAll('video[poster]').forEach(node => {
+                const poster = node.getAttribute('poster');
+                if (!poster) {
+                    return;
+                }
+                node.setAttribute('poster', withAssetVersion(poster));
+            });
+
+            document.querySelectorAll('img[srcset], source[srcset]').forEach(node => {
+                const srcset = node.getAttribute('srcset');
+                if (!srcset) {
+                    return;
+                }
+
+                const versionedSrcset = srcset
+                    .split(',')
+                    .map(item => item.trim())
+                    .filter(Boolean)
+                    .map(item => {
+                        const [url, descriptor] = item.split(/\s+/, 2);
+                        return descriptor ? `${withAssetVersion(url)} ${descriptor}` : withAssetVersion(url);
+                    })
+                    .join(', ');
+
+                node.setAttribute('srcset', versionedSrcset);
+            });
+
+            document.querySelectorAll('[data-images]').forEach(node => {
+                const images = (node.getAttribute('data-images') || '')
+                    .split(',')
+                    .map(image => image.trim())
+                    .filter(Boolean)
+                    .map(image => withAssetVersion(image));
+
+                node.setAttribute('data-images', images.join(', '));
+            });
+        }
+
+        applyAssetVersioning();
+
         const reveals = document.querySelectorAll('.reveal');
         const menuToggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('nav');
@@ -378,6 +483,14 @@
         const modalTitle = document.getElementById('modal-title');
         const modalCounter = document.getElementById('modal-counter');
         const modalThumbs = document.getElementById('modal-thumbs');
+
+        function activateReveal(el) {
+            if (el.classList.contains('active')) {
+                return;
+            }
+
+            el.classList.add('active');
+        }
 
         if (menuToggle && nav) {
             menuToggle.addEventListener('click', () => {
@@ -415,17 +528,42 @@
 
         pageSections.forEach(section => sectionObserver.observe(section));
 
-        function revealOnScroll() {
-            reveals.forEach(el => {
-                const top = el.getBoundingClientRect().top;
-                if (top < window.innerHeight - 100) {
-                    el.classList.add('active');
-                }
-            });
-        }
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (!entry.isIntersecting) {
+                            return;
+                        }
 
-        window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll();
+                        activateReveal(entry.target);
+                        revealObserver.unobserve(entry.target);
+                    });
+                },
+                {
+                    rootMargin: '0px 0px -12% 0px',
+                    threshold: 0.05
+                }
+            );
+
+            reveals.forEach(el => revealObserver.observe(el));
+        } else {
+            const revealOnScroll = () => {
+                reveals.forEach(el => {
+                    const top = el.getBoundingClientRect().top;
+                    if (top < window.innerHeight - 100) {
+                        activateReveal(el);
+                    }
+                });
+            };
+
+            const requestRevealCheck = () => {
+                window.requestAnimationFrame(revealOnScroll);
+            };
+
+            window.addEventListener('scroll', requestRevealCheck, { passive: true });
+            requestRevealCheck();
+        }
 
         let currentImages = [];
         let currentIndex = 0;
@@ -454,7 +592,8 @@
             const images = (card.getAttribute('data-images') || '')
                 .split(',')
                 .map(image => image.trim())
-                .filter(Boolean);
+                .filter(Boolean)
+                .map(image => withAssetVersion(image));
 
             if (!images.length) {
                 return;
@@ -739,15 +878,20 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Hotel",
+    "@type": ["Hotel", "LodgingBusiness"],
   "name": "База відпочинку Голубе озеро",
   "url": "https://golube-ozero.in.ua/",
-  "description": "База відпочинку в Овручі з будинками, номерами готелю, альтанками, рестораном і пляжем для гостей з Києва та області.",
+    "description": "База відпочинку Голубе озеро в Овручі, Житомирська область: будинки, домики, номери готелю, альтанки, ресторан і пляж. Відпочинок на природі біля Києва.",
+    "slogan": "Відпочинок на природі біля Голубого озера",
+    "keywords": "голубе озеро овруч, база відпочинку овруч, будинки на природі, відпочинок біля києва, житомирська область",
   "image": [
     "https://golube-ozero.in.ua/blue_lake.jpg",
     "https://golube-ozero.in.ua/hotel/hotel.jpg",
+        "https://golube-ozero.in.ua/houses/base_5.jfif",
     "https://golube-ozero.in.ua/gazebo_rest/restaurant.jpg"
   ],
+    "telephone": "+380673651044",
+    "priceRange": "UAH",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Овруч",
@@ -755,6 +899,10 @@
     "addressCountry": "UA"
   },
   "areaServed": [
+        {
+            "@type": "City",
+            "name": "Овруч"
+        },
     {
       "@type": "City",
       "name": "Київ"
@@ -797,8 +945,45 @@
       "@type": "LocationFeatureSpecification",
       "name": "Альтанки",
       "value": true
+        },
+        {
+            "@type": "LocationFeatureSpecification",
+            "name": "Будинки та домики",
+            "value": true
     }
   ]
+}
+</script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Де знаходиться база відпочинку Голубе озеро?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "База відпочинку Голубе озеро знаходиться в Овручі, Житомирська область, і підходить для гостей з Києва та області."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Яке житло доступне для відпочинку?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "На території доступні будинки, домики, номери готелю, альтанки та ресторан біля озера."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Чи підходить локація для відпочинку біля Києва?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Так, Голубе озеро в Овручі є популярним місцем для відпочинку на природі для гостей з Києва та Житомирської області."
+            }
+        }
+    ]
 }
 </script>
 </body>
