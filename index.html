@@ -50,6 +50,8 @@
         </ul>
     </nav>
 
+    <section class="hero-intro" aria-hidden="true"></section>
+
     <header>
         <div class="overlay">
             <h1>Голубе Озеро</h1>
@@ -117,33 +119,51 @@
         <!-- ROOMS -->
         <section id="rooms" class="section reveal">
             <h2 class="NameUnit">Номери готелю</h2>
-            <div class="grid">
-                <div class="card" onclick="openGallery(this)" data-images="hotel/hotel.jpg"><img src="hotel/hotel.jpg"
-                        alt="Номер 1 готелю Голубе озеро" loading="lazy" decoding="async">
-                    <div class="card-content">
+            <div class="cards-list">
+                <div class="card-vertical" onclick="openGallery(this)" data-images="hotel/hotel.jpg">
+                    <div class="card-image">
+                        <img src="hotel/hotel.jpg" alt="Номер 1 готелю Голубе озеро" loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Номер 1</h3>
-                        <p class="price">800 грн</p>
+                        <p class="description">2-місний номер у затишному корпусі біля соснового лісу<br />🌿 Тиха зона
+                            для відпочинку<br />🌊 До озера кілька хвилин пішки</p>
+                        <p class="price">1000 грн/ніч</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)" data-images="hotel/hotel_2.jpg"><img
-                        src="hotel/hotel_2.jpg" alt="Номер 2 готелю Голубе озеро" loading="lazy" decoding="async">
-                    <div class="card-content">
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="hotel/hotel_room2_01.jpg, hotel/hotel_room2_02.jpg, hotel/hotel_room2_03.jpg, hotel/hotel_room2_04.jpg">
+                    <div class="card-image">
+                        <img src="hotel/hotel_room2_01.jpg" alt="Номер 2 готелю Голубе озеро" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Номер 2</h3>
-                        <p class="price">800 грн</p>
+                        <p class="description">2-місний номер для парного або сімейного відпочинку<br />🌿 Спокійна
+                            атмосфера серед природи<br />🌊 Зручний доступ до пляжу та прогулянок</p>
+                        <p class="price">1000 грн/ніч</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)" data-images="hotel/hotel_3.jpg"><img
-                        src="hotel/hotel_3.jpg" alt="Номер 3 готелю Голубе озеро" loading="lazy" decoding="async">
-                    <div class="card-content">
+                <div class="card-vertical" onclick="openGallery(this)" data-images="hotel/hotel_3.jpg">
+                    <div class="card-image">
+                        <img src="hotel/hotel_3.jpg" alt="Номер 3 готелю Голубе озеро" loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Номер 3</h3>
-                        <p class="price">1200 грн</p>
+                        <p class="description">4-місний просторий номер для сім'ї або компанії<br />🌿 Комфортне
+                            розміщення в мальовничій локації<br />🌊 Поруч озеро, ліс і свіже повітря</p>
+                        <p class="price">1500 грн/ніч</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)" data-images="hotel/hotel_4.jpg"><img
-                        src="hotel/hotel_4.jpg" alt="Номер 4 готелю Голубе озеро" loading="lazy" decoding="async">
-                    <div class="card-content">
+                <div class="card-vertical" onclick="openGallery(this)" data-images="hotel/hotel_4.jpg">
+                    <div class="card-image">
+                        <img src="hotel/hotel_4.jpg" alt="Номер 4 готелю Голубе озеро" loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Номер 4</h3>
-                        <p class="price">1200 грн</p>
+                        <p class="description">4-місний номер з атмосферою заміського релаксу<br />🌿 Ідеально для
+                            тривалого відпочинку<br />🌊 Ліс, озеро та тиша прямо поруч</p>
+                        <p class="price">1500 грн/ніч</p>
                     </div>
                 </div>
             </div>
@@ -152,75 +172,110 @@
         <!-- HOUSES -->
         <section id="houses" class="section reveal">
             <h2 class="NameUnit">Будинки</h2>
-            <div class="grid">
-                <!-- 8 cards -->
-                <div class="card" onclick="openGallery(this)"
-                    data-images="houses/base_5.jfif, houses/house_10.jpg, houses/house_11.jpg, houses/house_12.jpg, houses/house_13.jpg, houses/house_14.jpg, houses/house_15.jpg, houses/house_16.jpg">
-                    <img src="houses/base_5.jfif" alt="Будинок 1 на базі відпочинку Голубе озеро" loading="lazy"
-                        decoding="async">
-                    <div class="card-content">
+            <div class="cards-list">
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="houses/base_5.jfif, houses/house_12.jpg, houses/house_13.jpg, houses/house_14.jpg, houses/house_15.jpg, houses/house_16.jpg">
+                    <div class="card-image">
+                        <img src="houses/base_5.jfif" alt="Будинок 1 на базі відпочинку Голубе озеро" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Будинок 1</h3>
-                        <p class="price">1800 грн</p>
+                        <p class="description">Деревяний двоповерховий будинок в розпалу лісу біля озера,
+                            4-місний<br />🌲 1 поверх: двоспальне ліжко<br />🌲 2 поверх: двоспальне ліжко<br />Справжня
+                            атмосфера природи</p>
+                        <p class="price">2000 грн/ніч</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)"
-                    data-images="houses/house_25.jpg, houses/house_2.jpg, houses/house_22.jpg, houses/house_23.jpg">
-                    <img src="houses/house_24.jpg" alt="Будинок 2 на базі відпочинку Голубе озеро" loading="lazy"
-                        decoding="async">
-                    <div class="card-content">
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="houses/house2_01.jpg, houses/house2_02.jpg, houses/house2_03.jpg, houses/house2_04.jpg, houses/house2_05.jpg, houses/house2_06.jpg, houses/house2_07.jpg">
+                    <div class="card-image">
+                        <img src="houses/house2_01.jpg" alt="Будинок 2 на базі відпочинку Голубе озеро" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Будинок 2</h3>
-                        <p class="price">1800 грн</p>
+                        <p class="description">Затишний деревяний будинок серед величних сосен, 4-місний<br />🌲
+                            Прекрасний вид на озеро<br />🌲 Справжній відпочинок на природі</p>
+                        <p class="price">2000 грн/ніч</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)" data-images="houses/base_4.jfif"><img
-                        src="houses/base_4.jfif" alt="Будинок 3 на базі відпочинку Голубе озеро" loading="lazy"
-                        decoding="async">
-                    <div class="card-content">
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="houses/base_4.jfif, houses/house3_01.jpg, houses/house3_02.jpg, houses/house3_03.jpg, houses/house3_04.jpg, houses/house3_05.jpg">
+                    <div class="card-image">
+                        <img src="houses/base_4.jfif" alt="Будинок 3 на базі відпочинку Голубе озеро" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Будинок 3</h3>
-                        <p class="price">2800 грн</p>
+                        <p class="description">Просторий деревяний будинок з 2 кімнатами в лісі біля озера,
+                            4-місний<br />🌲 Вільний доступ до озера<br />🌲 Комфортний відпочинок для сімей</p>
+                        <p class="price">2300 грн/ніч</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)"
-                    data-images="houses/house_42.jpg,  houses/house_4.jpg, houses/house_42.jpg, houses/house_41.jpg, houses/house_43.jpg, houses/house_44.jpg, houses/house_45.jpg, houses/house_46.jpg, houses/house_47.jpg, houses/house_48.jpg, houses/house_441.jpg, houses/house_442.jpg, houses/house_443.jpg, houses/house_444.jpg, houses/house_445.jpg, houses/house_446.jpg, houses/house_447.jpg">
-                    <img src="houses/house_42.jpg" alt="Будинок 4 на базі відпочинку Голубе озеро" loading="lazy"
-                        decoding="async">
-                    <div class="card-content">
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="houses/house4_01.jpg, houses/house_4.jpg, houses/house_43.jpg, houses/house_44.jpg, houses/house_45.jpg, houses/house_48.jpg, houses/house_441.jpg, houses/house_442.jpg, houses/house_443.jpg, houses/house_444.jpg, houses/house_445.jpg, houses/house_446.jpg, houses/house_447.jpg">
+                    <div class="card-image">
+                        <img src="houses/house4_01.jpg" alt="Будинок 4 на базі відпочинку Голубе озеро" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Будинок 4</h3>
-                        <p class="price">4500 грн</p>
+                        <p class="description">Великий деревяний будинок з 4 кімнатами в серці природи, 7-місний<br />🌲
+                            Престижне розташування біля озера<br />🌲 Ідеально для компаній та святкувань</p>
+                        <p class="price">5000 грн/ніч</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)"
-                    data-images="houses/house_5.jpg, houses/house_65.jpg, houses/house_56.jpg">
-                    <img src="houses/house_5.jpg" alt="Будинок 5 на базі відпочинку Голубе озеро" loading="lazy"
-                        decoding="async">
-                    <div class="card-content">
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="houses/house5_01.jpg, houses/house5_02.jpg, houses/house_56.jpg">
+                    <div class="card-image">
+                        <img src="houses/house5_01.jpg" alt="Будинок 5 на базі відпочинку Голубе озеро" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Будинок 5</h3>
-                        <p class="price">1400 грн</p>
+                        <p class="description">Затишна деревяна хатинка в лісі біля озера, 2-місна<br />🌲 Ідеально для
+                            пари<br />🌲 Романтичний відпочинок на природі</p>
+                        <p class="price">1600 грн/ніч</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)"
-                    data-images="houses/house_62.jpg, houses/house_5.jpg, houses/house_65.jpg, houses/house_56.jpg ">
-                    <img src="houses/house_62.jpg" alt="Будинок 6 на базі відпочинку Голубе озеро" loading="lazy"
-                        decoding="async">
-                    <div class="card-content">
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="houses/house6_01.jpg, houses/house6_02.jpg, houses/house6_03.jpg, houses/house6_04.jpg">
+                    <div class="card-image">
+                        <img src="houses/house6_01.jpg" alt="Будинок 6 на базі відпочинку Голубе озеро" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Будинок 6</h3>
-                        <p class="price">1400 грн</p>
+                        <p class="description">Теплий деревяний будинок в лісі з видом на озеро, 2-місний<br />🌲
+                            Спокійний куточок природи<br />🌲 Це місце робить сім'ю щасливою</p>
+                        <p class="price">1600 грн/ніч</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)" data-images="houses/house_5.jpg,">
-                    <img src="houses/house_5.jpg" alt="Будинок 3а на базі відпочинку Голубе озеро" loading="lazy"
-                        decoding="async">
-                    <div class=" card-content">
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="houses/house3a_01.jpg, houses/house3a_02.jpg, houses/house3a_03.jpg, houses/house3a_04.jpg">
+                    <div class="card-image">
+                        <img src="houses/house3a_01.jpg" alt="Будинок 3а на базі відпочинку Голубе озеро" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Будинок 3a</h3>
-                        <p class="price">400 грн</p>
+                        <p class="description">Компактний деревяний номер в лісі біля озера, 3-місний<br />🌲 Прямий
+                            доступ до озера<br />🌲 Дика природа і затишок</p>
+                        <p class="price">1000грн/ніч за 2 особи, 1400грн/ніч за 3 особи</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)" data-images="houses/house_5.jpg">
-                    <img src="houses/house_5.jpg" alt="Будинок 3б на базі відпочинку Голубе озеро" loading="lazy"
-                        decoding="async">
-                    <div class="card-content">
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="houses/house3b_01.jpg, houses/house3b_02.jpg, houses/house3b_03.jpg, houses/house3b_04.jpg">
+                    <div class="card-image">
+                        <img src="houses/house3b_01.jpg" alt="Будинок 3б на базі відпочинку Голубе озеро" loading="lazy"
+                            decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>Будинок 3б</h3>
-                        <p class="price">400 грн</p>
+                        <p class="description">Затишний номер в деревяному стилі посеред лісу, 3-місний<br />🌲 Близько
+                            до озера та пляжу<br />🌲 Справжній лісний відпочинок</p>
+                        <p class="price">1000грн/ніч за 2 особи, 1400грн/ніч за 3 особи</p>
                     </div>
                 </div>
             </div>
@@ -229,31 +284,43 @@
         <!-- GAZEBO -->
         <section id="gazebo" class="section reveal">
             <h2 class="NameUnit">Альтанки та ресторан</h2>
-            <div class="grid">
-                <div class="card" onclick="openGallery(this)"
-                    data-images="gazebo_rest/gazebo.jpg,gazebo_rest/gazebo_1.jpg,gazebo_rest/gazebo_2.jpg, gazebo_rest/gazebo_31.jpg, gazebo_rest/gazebo_32.jpg, gazebo_rest/gazebo_21.jpg">
-                    <img src="gazebo_rest/gazebo.jpg" alt="Альтанка на базі відпочинку Голубе озеро" loading="lazy"
-                        decoding="async">
-                    <div class="card-content">
-                        <h3>Альтанка</h3>
-                        <p class="price">600 грн</p>
+            <div class="cards-list">
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="gazebo_rest/gazebo.jpg,gazebo_rest/gazebo_1.jpg,gazebo_rest/gazebo_2.jpg, gazebo_rest/gazebo_32.jpg, gazebo_rest/gazebo_21.jpg">
+                    <div class="card-image">
+                        <img src="gazebo_rest/gazebo.jpg" alt="Альтанка на базі відпочинку Голубе озеро" loading="lazy"
+                            decoding="async">
                     </div>
-                </div>
-                <div class="card" onclick="openGallery(this)"
-                    data-images="gazebo_rest/gazebo.webp, gazebo_rest/gazebo_1.jpg, gazebo_rest/gazebo_building_4.jpg, gazebo_rest/gazebo_31.jpg, gazebo_rest/gazebo_32.jpg, gazebo_rest/gazebo_21.jpg">
-                    <img src="gazebo_rest/gazebo.webp" alt="Велика альтанка на базі відпочинку Голубе озеро"
-                        loading="lazy" decoding="async">
-                    <div class="card-content">
+                    <div class="card-info">
                         <h3>Альтанка</h3>
+                        <p class="description">Класична альтанка серед дерев для затишного дозвілля<br />🌲 Мангал та
+                            простір для компанії<br />🌊 Поруч озеро і прогулянкова зона</p>
                         <p class="price">800 грн</p>
                     </div>
                 </div>
-                <div class="card" onclick="openGallery(this)"
+                <div class="card-vertical" onclick="openGallery(this)"
+                    data-images="gazebo_rest/gazebo.webp, gazebo_rest/gazebo_1.jpg, gazebo_rest/gazebo_building_4.jpg, gazebo_rest/gazebo_32.jpg, gazebo_rest/gazebo_21.jpg">
+                    <div class="card-image">
+                        <img src="gazebo_rest/gazebo.webp" alt="Велика альтанка на базі відпочинку Голубе озеро"
+                            loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-info">
+                        <h3>Велика альтанка</h3>
+                        <p class="description">Простора альтанка для святкувань та великих компаній<br />🌲 Комфортно у
+                            спекотну та дощову погоду<br />🌊 Чудовий варіант для сімейних подій</p>
+                        <p class="price">1200 грн</p>
+                    </div>
+                </div>
+                <div class="card-vertical" onclick="openGallery(this)"
                     data-images="gazebo_rest/restaurant.jpg, gazebo_rest/restaurant_v.jpg, gazebo_rest/restaurant_5.jpg">
-                    <img src="gazebo_rest/restaurant.jpg" alt="Ресторан на базі відпочинку Голубе озеро" loading="lazy"
-                        decoding="async">
-                    <div class="card-content">
+                    <div class="card-image">
+                        <img src="gazebo_rest/restaurant.jpg" alt="Ресторан на базі відпочинку Голубе озеро"
+                            loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-info">
                         <h3>🍽 Ресторан</h3>
+                        <p class="description">Смачні страви української кухні у комфортній залі<br />🌲 Панорамні
+                            краєвиди на природу<br />🌊 Можливість бронювання для заходів</p>
                         <p class="price">бронювання</p>
                     </div>
                 </div>
@@ -262,8 +329,10 @@
 
         <section id="contacts" class="section reveal">
             <h2 class="NameUnit">Контакти</h2>
-            <a href="tel:+380673651044" class="contacts">Телефон: +380 67 365 1044</a><br>
-            <a href="tel:+380985009607" class="contacts">Телефон: +380 98 500 9607</a><br>
+            <div class="contacts-list">
+                <a href="tel:+380673651044" class="contacts">Телефон: +380 67 365 1044</a>
+                <a href="tel:+380985009607" class="contacts">Телефон: +380 98 500 9607</a>
+            </div>
             <div class="grid">
                 <iframe class="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5097901.002668126!2d19.072265624999996!3d51.39920565355378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472989d0a9e4b311%3A0xe34b59a6c82ddbe9!2z0JPQvtC70YPQsdC-0LUg0L7Qt9C10YDQvg!5e0!3m2!1suk!2sua!4v1775080949191!5m2!1suk!2sua"
@@ -456,7 +525,7 @@
             }
         });
 
-        document.querySelectorAll('.card[data-images], #contacts [data-images]').forEach(card => {
+        document.querySelectorAll('.card[data-images], .card-vertical[data-images], #contacts [data-images]').forEach(card => {
             const count = (card.getAttribute('data-images') || '')
                 .split(',')
                 .map(image => image.trim())
@@ -481,24 +550,191 @@
             event.stopPropagation();
         });
 
-        modalImage.addEventListener('touchstart', event => {
-            touchStartX = event.changedTouches[0].screenX;
-        }, { passive: true });
+        // Zoom + pan functionality for modal images
+        let currentZoom = 1;
+        let translateX = 0;
+        let translateY = 0;
+        const maxZoom = 3;
+        const minZoom = 1;
+        const zoomStep = 0.1;
+        let isDragging = false;
+        let dragStartX = 0;
+        let dragStartY = 0;
+        let touchDistance = 0;
+        let initialZoom = 1;
 
-        modalImage.addEventListener('touchend', event => {
-            touchEndX = event.changedTouches[0].screenX;
-            const distance = touchEndX - touchStartX;
-
-            if (Math.abs(distance) < 40) {
+        function clampPan() {
+            if (currentZoom <= 1) {
+                translateX = 0;
+                translateY = 0;
                 return;
             }
 
-            if (distance < 0) {
-                nextImage();
+            const baseWidth = modalImage.clientWidth;
+            const baseHeight = modalImage.clientHeight;
+            const maxPanX = Math.max(0, ((baseWidth * currentZoom) - baseWidth) / 2);
+            const maxPanY = Math.max(0, ((baseHeight * currentZoom) - baseHeight) / 2);
+
+            translateX = Math.min(maxPanX, Math.max(-maxPanX, translateX));
+            translateY = Math.min(maxPanY, Math.max(-maxPanY, translateY));
+        }
+
+        function applyImageTransform() {
+            clampPan();
+            modalImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentZoom})`;
+            modalImage.style.cursor = currentZoom > 1 ? (isDragging ? 'grabbing' : 'grab') : 'pointer';
+        }
+
+        function resetZoom() {
+            currentZoom = 1;
+            translateX = 0;
+            translateY = 0;
+            isDragging = false;
+            applyImageTransform();
+        }
+
+        // Desktop zoom with mouse wheel
+        modalImage.addEventListener('wheel', event => {
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (event.deltaY < 0) {
+                currentZoom = Math.min(currentZoom + zoomStep, maxZoom);
             } else {
-                prevImage();
+                currentZoom = Math.max(currentZoom - zoomStep, minZoom);
+            }
+
+            if (currentZoom <= 1) {
+                translateX = 0;
+                translateY = 0;
+            }
+
+            applyImageTransform();
+        }, { passive: false });
+
+        // Desktop pan while zoomed
+        modalImage.addEventListener('mousedown', event => {
+            if (currentZoom <= 1) {
+                return;
+            }
+
+            event.preventDefault();
+            isDragging = true;
+            dragStartX = event.clientX - translateX;
+            dragStartY = event.clientY - translateY;
+            applyImageTransform();
+        });
+
+        window.addEventListener('mousemove', event => {
+            if (!isDragging) {
+                return;
+            }
+
+            translateX = event.clientX - dragStartX;
+            translateY = event.clientY - dragStartY;
+            applyImageTransform();
+        });
+
+        window.addEventListener('mouseup', () => {
+            if (!isDragging) {
+                return;
+            }
+
+            isDragging = false;
+            applyImageTransform();
+        });
+
+        // Mobile pinch zoom + pan
+        modalImage.addEventListener('touchstart', event => {
+            if (event.touches.length === 2) {
+                const touch1 = event.touches[0];
+                const touch2 = event.touches[1];
+                touchDistance = Math.hypot(
+                    touch2.clientX - touch1.clientX,
+                    touch2.clientY - touch1.clientY
+                );
+                initialZoom = currentZoom;
+                touchStartX = null;
+                return;
+            }
+
+            if (event.touches.length === 1) {
+                const touch = event.touches[0];
+                touchStartX = touch.screenX;
+
+                if (currentZoom > 1) {
+                    isDragging = true;
+                    dragStartX = touch.clientX - translateX;
+                    dragStartY = touch.clientY - translateY;
+                    applyImageTransform();
+                }
             }
         }, { passive: true });
+
+        modalImage.addEventListener('touchmove', event => {
+            if (event.touches.length === 2) {
+                event.preventDefault();
+                const touch1 = event.touches[0];
+                const touch2 = event.touches[1];
+                const newDistance = Math.hypot(
+                    touch2.clientX - touch1.clientX,
+                    touch2.clientY - touch1.clientY
+                );
+
+                const scale = newDistance / touchDistance;
+                currentZoom = Math.max(minZoom, Math.min(initialZoom * scale, maxZoom));
+
+                if (currentZoom <= 1) {
+                    translateX = 0;
+                    translateY = 0;
+                }
+
+                applyImageTransform();
+                return;
+            }
+
+            if (event.touches.length === 1 && currentZoom > 1 && isDragging) {
+                event.preventDefault();
+                const touch = event.touches[0];
+                translateX = touch.clientX - dragStartX;
+                translateY = touch.clientY - dragStartY;
+                applyImageTransform();
+            }
+        }, { passive: false });
+
+        modalImage.addEventListener('touchend', event => {
+            if (currentZoom > 1) {
+                isDragging = false;
+                applyImageTransform();
+                return;
+            }
+
+            if (event.changedTouches.length === 1 && touchStartX !== null) {
+                touchEndX = event.changedTouches[0].screenX;
+                const distance = touchEndX - touchStartX;
+
+                if (Math.abs(distance) >= 40) {
+                    if (distance < 0) {
+                        nextImage();
+                    } else {
+                        prevImage();
+                    }
+                }
+            }
+        }, { passive: true });
+
+        // Reset zoom when changing images
+        const originalShowImage = showImage;
+        showImage = function () {
+            resetZoom();
+            originalShowImage.call(this);
+        };
+
+        const originalCloseModal = closeModal;
+        closeModal = function () {
+            resetZoom();
+            originalCloseModal.call(this);
+        };
     </script>
     <script type="application/ld+json">
 {

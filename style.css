@@ -30,18 +30,7 @@ body {
   margin: 0;
   font-family: "Manrope", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
-  background-image:
-    linear-gradient(
-      160deg,
-      rgba(2, 20, 34, 0.6),
-      rgba(8, 48, 74, 0.35),
-      rgba(4, 14, 24, 0.7)
-    ),
-    url("blue_lake.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: #07090c;
 }
 
 body::before {
@@ -55,6 +44,8 @@ body::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  image-rendering: auto;
   z-index: -1;
 }
 
@@ -66,12 +57,16 @@ body::after {
   pointer-events: none;
   background:
     radial-gradient(
-      circle at 15% 18%,
-      rgba(77, 184, 255, 0.25),
-      transparent 35%
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.08),
+      transparent 38%
     ),
-    radial-gradient(circle at 82% 78%, rgba(0, 123, 255, 0.2), transparent 40%),
-    linear-gradient(180deg, rgba(4, 10, 18, 0.28), rgba(4, 10, 18, 0.58));
+    radial-gradient(
+      circle at 82% 76%,
+      rgba(255, 255, 255, 0.05),
+      transparent 42%
+    ),
+    linear-gradient(180deg, rgba(8, 10, 12, 0.2), rgba(8, 10, 12, 0.52));
 }
 
 nav {
@@ -178,9 +173,15 @@ nav a.active {
   background: rgba(88, 192, 255, 0.16);
 }
 
+.hero-intro {
+  min-height: 100vh;
+  height: 100vh;
+}
+
 header {
   padding-top: 80px;
-  height: 100vh;
+  min-height: 88vh;
+  height: 88vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,19 +226,33 @@ header {
 }
 
 .section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: 40px auto;
+  padding: 80px 60px;
+  width: 100%;
+  margin: 0;
   background: linear-gradient(
     140deg,
     var(--color-surface),
     var(--color-surface-alt)
   );
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: var(--shadow-md);
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: none;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section > .NameUnit,
+.section > .cards-list,
+.section > .grid,
+.section > .about-container,
+.section > .contacts-list {
+  width: 100%;
+  max-width: 1200px;
 }
 
 .section::before {
@@ -262,6 +277,11 @@ main .section:nth-of-type(2n) {
     rgba(4, 20, 33, 0.76),
     rgba(8, 38, 61, 0.64)
   );
+}
+
+main > .section:first-of-type {
+  border-radius: 0;
+  border-top: none;
 }
 
 .NameUnit {
@@ -412,6 +432,92 @@ main .section:nth-of-type(2n) {
   gap: 20px;
 }
 
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.card-vertical {
+  display: flex;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  transition: var(--transition-base);
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(4, 20, 34, 0.52);
+  box-shadow: var(--shadow-sm);
+  gap: 0;
+}
+
+.card-vertical::before {
+  display: none;
+}
+
+.card-vertical:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(155, 220, 255, 0.55);
+}
+
+.card-image {
+  flex: 0 0 320px;
+  height: 280px;
+  width: 320px;
+  overflow: hidden;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
+}
+
+.card-vertical .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.card-vertical:hover .card-image img {
+  transform: scale(1.07);
+}
+
+.card-info {
+  flex: 1;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 16, 30, 0.05),
+    rgba(2, 16, 30, 0.9)
+  );
+}
+
+.card-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+}
+
+.card-info .description {
+  margin: 0 0 12px 0;
+  color: #a0d8ff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.card-info .price {
+  margin: 0;
+  color: var(--color-primary-soft);
+  font-weight: 600;
+  font-size: 18px;
+}
+
 .card {
   position: relative;
   border-radius: var(--radius-md);
@@ -546,7 +652,9 @@ main .section:nth-of-type(2n) {
   margin: 0 auto;
   border-radius: 15px;
   object-fit: contain;
-  touch-action: pan-y;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .about-container {
@@ -583,17 +691,6 @@ main .section:nth-of-type(2n) {
   background: black;
 }
 
-#gazebo .grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-#gazebo .card {
-  width: 300px;
-}
-
 footer {
   text-align: center;
   color: white;
@@ -604,13 +701,21 @@ footer {
   text-align: center;
 }
 
+.contacts-list {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  margin-bottom: 10px;
+}
+
 .contacts {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
+  line-height: 1.25;
   padding: 10px 20px;
   border-radius: var(--radius-pill);
   background: linear-gradient(
@@ -621,7 +726,8 @@ footer {
   border: 1px solid rgba(155, 220, 255, 0.45);
   box-shadow: 0 8px 20px rgba(55, 156, 230, 0.42);
   transition: all var(--transition-base);
-  display: inline-block;
+  display: block;
+  width: min(100%, 360px);
 }
 
 .contacts:hover {
@@ -755,21 +861,19 @@ a.contacts[href^="tel:"] {
 }
 
 @media (max-width: 767px) {
+  .hero-intro {
+    min-height: 100svh;
+    height: 100svh;
+  }
+
   header {
-    height: 92svh;
-    min-height: 560px;
+    height: 84svh;
+    min-height: 500px;
     padding-top: 72px;
   }
 
-  body {
-    background-image:
-      linear-gradient(
-        160deg,
-        rgba(2, 20, 34, 0.62),
-        rgba(8, 48, 74, 0.4),
-        rgba(4, 14, 24, 0.72)
-      ),
-      url("blue_lake_mobile.webp");
+  body::before {
+    background-image: url("blue_lake_mobile.webp");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -817,14 +921,48 @@ a.contacts[href^="tel:"] {
     gap: 16px;
   }
 
+  .cards-list {
+    gap: 16px;
+  }
+
+  .card-vertical {
+    flex-direction: column;
+  }
+
+  .card-image {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 240px;
+    min-height: 240px;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+  }
+
+  .card-vertical .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+  }
+
   #gazebo .card {
     width: 100%;
     max-width: 100%;
   }
 
   .section {
-    margin: 24px 12px;
-    padding: 64px 14px 24px;
+    margin: 0;
+    padding: 60px 16px 24px;
+    width: 100%;
+  }
+
+  .section > .NameUnit,
+  .section > .cards-list,
+  .section > .grid,
+  .section > .about-container,
+  .section > .contacts-list {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
   }
 
   .NameUnit {
@@ -873,6 +1011,10 @@ a.contacts[href^="tel:"] {
     width: min(100%, 330px);
     font-size: 16px;
     padding: 10px 16px;
+  }
+
+  .contacts-list {
+    gap: 8px;
   }
 
   #contacts .grid {
