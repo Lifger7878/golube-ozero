@@ -24,6 +24,8 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -31,6 +33,11 @@ body {
   font-family: "Manrope", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
   background: #07090c;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body::before {
@@ -1107,9 +1114,10 @@ a.contacts[href^="tel:"] {
   }
 
   .section {
-    margin: 18px 8px;
+    margin: 0;
+    width: 100%;
     padding: 60px 12px 20px;
-    border-radius: 16px;
+    border-radius: 0;
   }
 
   .card img {
